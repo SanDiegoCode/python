@@ -11,3 +11,8 @@ Here you will learn the basics of python.
 	* Don't worry about it! This resource is free to use by anyone!
 * **Can I host this on my website?**
 	* Sure, as long as you give credit and link it to our website
+
+##Creators
+**Lead Curriculum Designer**: Maleeha Imran
+
+**Website Manager**: Ronak Shah
