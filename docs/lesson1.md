@@ -1,4 +1,4 @@
-Welcome! 
+##Welcome! 
 
 In our first lesson here we will be focusing on learning about **variables** and **data types**. 
 Let's jump right in. 
@@ -21,6 +21,7 @@ You can create whatever variables you want, but there are a couple rules that yo
 
 Alright, now that we know the rules, let's learn about the different types of data. Programs deal with data a lot, so it's a good idea to understand the different types of data in Python.
 
+##Variable Types
 **Strings:** A string is a series of characters. The way you declare, or create a string is just like how we made the variable, statement from earlier; by placing whatever message we want to have in "quotation marks". 
 	
 	"String"
@@ -46,6 +47,7 @@ However, we may get a large number of decimal places in the answers to our calcu
 
 Alright, now we know about a couple of different data types in Python. Now let's see what we can do with that data. 
 
+##Printing
 A **method**, is an action that the programming language you are using, whether it be Python or Java, can perform on a certain piece of data.
 
 For example, let's say that I made a string, and I wanted to change the case(A or a) of certain letters in that string. I could use a couple of different methods to make that happen.
