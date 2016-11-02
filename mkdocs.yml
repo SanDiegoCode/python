@@ -1,1 +1,39 @@
-site_name: My Docs
+
+# Project information
+site_name: 'Python Tutorials'
+site_description: 'A tutorial to python'
+site_author: 'San Diego Code'
+site_url: 'https://sandiegocode/python'
+
+pages:
+- Home: index.md
+- Lesson 1:  lesson1.md
+
+# Repository
+#repo_name: 'GitHub'
+#repo_url: 'https://github.com/ronakdev/apush'
+
+# Copyright
+copyright: © Ronak Shah
+
+# Documentation and theme
+theme: 'material'
+
+# Options
+extra:
+  palette:
+    primary: 'purple'
+    accent: 'light blue'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  i18n:
+    prev: 'Previous'
+    next: 'Next'
+  author:
+    github: 'sandiegocode'
+
+
+# Extensions
+markdown_extensions:
+  - admonition
