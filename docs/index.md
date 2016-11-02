@@ -3,7 +3,8 @@
 Here you will learn the basics of python.
 
 ## FAQs
-
+* **Where do I run the code?**
+	* You can either [install python](http://docs.python-guide.org/en/latest/starting/installation/)  (Windows, Mac, and Linux) or [code online with CodeSkulptor](http://www.codeskulptor.org/) (All Platforms ) 
 * **What if I need help?** 
 	* We're only [an email](mailto:ronak.manish.shah@gmail.com) away :D
 * **What if I'm not a part of SD Code?** 
