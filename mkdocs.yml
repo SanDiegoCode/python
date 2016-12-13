@@ -8,7 +8,7 @@ site_url: 'https://sandiegocode/python'
 pages:
 - Home: index.md
 - Lesson 1:  lesson1.md
-
+- Lesson 2: lesson2.md
 # Repository
 #repo_name: 'GitHub'
 #repo_url: 'https://github.com/ronakdev/apush'
