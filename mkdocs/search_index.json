@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Welcome to Python\n\n\nHere you will learn the basics of python.\n\n\nFAQs\n\n\n\n\nWhere do I run the code?\n\n\nYou can either \ninstall python\n  (Windows, Mac, and Linux) or \ncode online with CodeSkulptor\n (All Platforms ) \n\n\n\n\n\n\nWhat if I need help?\n \n\n\nWe're only \nan email\n away :D\n\n\n\n\n\n\nWhat if I'm not a part of SD Code?\n \n\n\nDon't worry about it! This resource is free to use by anyone!\n\n\n\n\n\n\nCan I host this on my website?\n\n\nSure, as long as you give credit and link it to our website\n\n\n\n\n\n\n\n\nCreators\n\n\nLead Curriculum Designer\n: Maleeha Imran\n\n\nWebsite Manager\n: Ronak Shah", 
+            "text": "Welcome to Python\n\n\nHere you will learn the basics of python.\n\n\nFAQs\n\n\n\n\n\n\nWhere do I run the code?\n\n\n\n\nYou can either \ninstall python\n  (Windows, Mac, and Linux) or \ncode online with Tutorials Point\n (All Platforms ) \n\n\n\n\n\n\n\n\nWhat if I need help?\n \n\n\n\n\nWe're only \nan email\n away :D\n\n\n\n\n\n\nWhat if I'm not a part of SD Code?\n \n\n\nDon't worry about it! This resource is free to use by anyone!\n\n\n\n\n\n\nCan I host this on my website?\n\n\nSure, as long as you give credit and link it to our website\n\n\n\n\n\n\nHow can I contribute?\n\n\nSubmit a pull request to the repository on \nGithub\n\n\n\n\n\n\n\n\nCreators\n\n\nLead Curriculum Designer\n: Maleeha Imran\n\n\nWebsite Manager\n: Ronak Shah", 
             "title": "Home"
         }, 
         {
@@ -12,7 +12,7 @@
         }, 
         {
             "location": "/#faqs", 
-            "text": "Where do I run the code?  You can either  install python   (Windows, Mac, and Linux) or  code online with CodeSkulptor  (All Platforms )     What if I need help?    We're only  an email  away :D    What if I'm not a part of SD Code?    Don't worry about it! This resource is free to use by anyone!    Can I host this on my website?  Sure, as long as you give credit and link it to our website", 
+            "text": "Where do I run the code?   You can either  install python   (Windows, Mac, and Linux) or  code online with Tutorials Point  (All Platforms )      What if I need help?     We're only  an email  away :D    What if I'm not a part of SD Code?    Don't worry about it! This resource is free to use by anyone!    Can I host this on my website?  Sure, as long as you give credit and link it to our website    How can I contribute?  Submit a pull request to the repository on  Github", 
             "title": "FAQs"
         }, 
         {
