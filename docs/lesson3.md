@@ -1,243 +1,196 @@
-##Lesson 3 - Loops
-In the last lesson, we learned about **lists**, groups of items that are sorted in a certain order. In this lesson, we are going to learn about how we can easily go through the items in a list, using loops. 
+##Lesson 2 - Lists
+Now that we know a bit about variables and data types, we can now learn how we can put a bunch of data into one place and how to easily access it, through lists. 
 
-**Loops:**
+So what exactly is a **list**? A **list** is a group of items that are sorted in a certain order. A list usually contains more than one item, but those items can be whatever you want them to be. You can make a list of places you have visited or a list of numbers from 1-100, whatever you would like. 
 
-A **loop** is basically a block of code with certain instructions inside that are repeated continously until a certain condition is met. Using loops, we can perform certain actions on every item in a list. For example, let's say we have a group of students, and we want to print out the name of each student in that group. It would be really annoying if we had to print out every student's name one at a time, especially if we had a really big class. We can use a loop print out each student's name with ease.
+##Lists
+In Python, you can make a list using square brackets ([]), and inside your list, you can seperate the different items by using commas. For example, let's say we have a group that contains different flavors of ice cream. We want to put those flavors in a list. Let's call that list 'flavors'. 
 
-	students = ['john', 'rose', 'harry']
-	for student in students:
-		print(student)
-		
-The second line in this block of code, tells Python that it should take one of the names that is stored in the list 'students' and put that name in the variable 'student'. In the line after that, we tell Python to print out the name of 'student'. Python will then repeat the second and third lines for each student in the list. This is what will print out"
-
-	john
-	rose
-	harry
+	flavors = ['chocolate', 'strawberry','vanilla']
 	
-In for loops, Python will look at the first value in the list "students" and put that value in the variable 'student'. Then, Python will look for the next instruction in the loop, which in this case, is to print out the value of the variable 'student'. Then Python will print out: john. 
+Now we have made a list of flavors. Let's print out that list.
+	
+	print(flavors)
+	
+When Python prints out the list flavors, its going to print the whole thing out, including the square brackets.
 
-There are still more values inside of the list, don't forget about rose and harry. Python will then go back to the second value in the list, put that value in the variable 'student'. Then, it will print out the value inside 'student', which is now the second value of the list, rose. Then, because there is still one more value in the list, Python will go back and repeat the steps for harry. It will stop repeating after that, because there are no more values left in the list.
+	['chocolate', 'strawberry', 'vanilla']
+	
+Hmm, I'm sure we could print that out in a nicer format. Let's learn how we can access different elements in a list.'
 
-You can do a lot of different things inside of loops. You can also add in as many lines as you want.
+The elements in a list are ordered in a certain way, so we can tell Python to get a certain element from that list by telling Python the position, or index, of the element we want. To do that, all we need to do is write the name of our list, and follow it with the index in square brackets. For example, let's say I want vanilla ice cream:
+	
+	print(flavors[2])
+Note: Most programming langauges including Python, consider the first item in a list, to have the position/index 0, not 1. The second item will be at index 1, the third at index 2, and so on. 
 
-What if we want to do something after the loop? Well, any line after the loop that is not indented will execute once, and won't repeat.
+	vanilla
 
-	students = ['john', 'rose', 'harry']
-	for student in students:
-		print(student)
-		print("Nice job, " + student.title() + ".\n")
-		
-	print('Everyone did really well on their math quiz')
+If you want tot get the last item in a list, you can use the index, -1. 
+	
+	print(flavors[-1])
+	vanilla
+You can use the index -2, for the second last item in a list, and so on.
+
+You can also use any String functions from our previous lesson on items in a list. Like the title() method below:
+
+	print(flavors[2].title())
+	Vanilla
+You can use items in a list just like you would use any other variable.
+
+	print("My favorite ice cream flavor is " + flavors[2])
+	My favorite ice cream flavor is vanilla
+
+**Changing Items:** In your future programs, you may need to change, add, or remove items from a list. Let's start, by saying, we want to change one of the flavors in our list, from vanilla to mint, but we do not want to change any other flavors. Here is our original list.  	
+
+	flavors = ['chocolate', 'strawberry','vanilla']
+	print(flavors)
+Let's change the value at index 2, from vanilla to mint.
+
+	flavors[2] = 'mint'
+	print(flavors)
+	
+Here is what happens when we print out our original list.
+	
+	['chocolate', 'strawberry', 'vanilla']
+	
+And this is what happens when we print out our list after we changed vanilla to mint.
+
+	['chocolate', 'strawberry', 'mint']
+**Adding Items:** As shown, you can change any value in a list.Now, let's say you wanted to add more items to your list. Let's say we wanted to add the flavor, berry, to our original list. We can do this in a couple different ways. 
+One way we can add an item is by using the append() method. This method will add an item to the end of our list. 
+
+Let's print out original list again.
+	
+	print(flavors)
+	['chocolate', 'strawberry', 'vanilla']
+
+Now, let's try adding berry to the end of our flavors list.
+
+	flavors.append('berry')
+	print(flavors)
+Using the append() method will not have any effect on the other items in a list.
+	
+	['chocolate', 'strawberry', 'vanilla', 'berry']
+We can use the append() method to fill out an empty list too.
+Side Note: You can make comments in Python using the # symbol, to make it easier to read through your code.
+
+	flavors = [] #this is an empty list
+	flavors.append('chocolate')
+	flavors.append('strawberry')
+	flavors.append('vanilla')
+	flavors.append('berry')
+	
+	print(flavors)
 	
 This is what will print out:
 	
-	john
-	Nice job, John.
+	['chocolate', 'strawberry', 'vanilla', 'berry']
 	
-	rose
-	Nice job, Rose.
-	
-	harry
-	Nice job, Harry.
-	
-	Everyone did really well on their math quiz
-	
-It's important to keep in mind that we don't make any mistakes in our indentation. Here are some things to keep in mind while coding:
+You can also use the insert() method to add different items to your list. This method allows you to add an item in any index in the list. Let's try adding another flavor, mint, to the beginning of our original list.
 
-Python will let you know when you forget to indent something. This is shown here:
-
-	magicians = ['alice', 'david', 'carolina']
-	for magician in magicians:
-    print(magician)
-    
-This will show up because we forgot to indent the print line. 
-
-	File "students.py", line 3
-    print(student)
-        ^
-	IndentationError: expected an indented block
-You can also make a logical error with loops, as shown here below:
-
-	students = ['john', 'rose', 'harry']
-	for student in students:
-    	print("Nice job, " + student.title() + ".\n")
-    print("I hope you do well on the next one, " + 
-    student.title())
-This is what will print out:
-	
-	Nice job, John.
-	
-	Nice job, Rose.
-	
-	Nice job, Harry.
-	
-	I hope you do well on the next one, John
-The last message was not repeated for rose and harry, because we did not indent that print command. 
-The code will still work, but it won't do what you wanted it to do.
-
-Python will also tell you if you indented something when you did not need to. For example, 
-
-	message = "Hello class!"
-		print(message)
-		
-This is what will happen:
-
-	File "message.py", line 2
-    print(message)
-    ^
-	IndentationError: unexpected indent
-Also, you will get a syntax error notification if you forget the colon after you write out your for loop. Don't forget the colon, as it is not always easy to find your mistake if you happen to forget it. 
-
-**Numerical Functions with Lists:** Let's take a break from loops for now, and talk a bit more about lists. So far, we have made lists with String values inside of them, values inside the " ". However, we may need to make list with other types of data. Lists can be pretty useful if we want to deal with a bunch of numbers. 
-
-Let's suppose, we want to make a list of numbers and print them out. We can use Python's range() function, to have Python generate numbers in a certain range. For example:
-
-	for num in range(1, 8)
-		print(num)
-This is what will print out:
-
-	1
-	2
-	3
-	4
-	5
-	6
-	7
-The number 8 did not print out, because the range() function tells Python that it should start from the first number in the parentheses, and stop at the last one. Becasues Python stops the loop when it reaches the last number, the last number will never be printed out. If we wanted to print out the number 8 as well, we could try this:
-
-	for num in range(1, 9)
-		print(num)
+	flavors = ['chocolate', 'strawberry', 'vanilla']
+	flavors.insert(0, 'mint')
+	print(flavors)
 		
 This is what will print out:
 
-	1
-	2
-	3
-	4
-	5
-	6
-	7
-	8
-
-There are a couple of functions we can use on a list of numbers. For example, we can find the minimum, maximum, and sum of a list of numbers with ease.
-
-	numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
-	min(numbers)
-	max(numbers)
-	sum(numbers)
-This is the output:
+	['mint', 'chocolate', 'strawberry', 'vanilla']
 	
-	0
-	9
-	45
-If we want to split apart, or slice a list into different parts, we can use the following code to do so. Let's say we have a group of employees at a clothing store.
+**Removing Items:** Okay, now let's say, we don't want to include the mint flavor in our list anymore. Let's learn how to remove an item from a list. You can remove an item from a list using the del statement.
 
-	workers = ['Ava', 'Anna', 'Matt', 'Josh', 'Liz']
-	print(workers[0:3])
+	flavors = ['mint', chocolate', 'strawberry', 'vanilla']
+	print(flavors)
+	
+	del flavors[0]
+	print(flavors)
+	
 This is what will print out:
 
-	['Ava', 'Anna', 'Anna']
-Let's say we wanted to give employees 1 to 4 a raise.
+	['mint', 'chocolate', 'strawberry', 'vanilla']
+	['chocolate', 'strawberry', 'vanilla']
+You can also use the remove() method, to remove a value from a list.
 
-	workers = ['Ava', 'Anna', 'Matt', 'Josh', 'Liz']
-	print(workers[1:4])
+	flavors = ['mint', chocolate', 'strawberry', 'vanilla']
+	print(flavors)
+
+	flavors.remove('mint')
+	print(flavors)
+This is what will print out:
+
+	['mint', 'chocolate', 'strawberry', 'vanilla']
+	['chocolate', 'strawberry', 'vanilla']
+We can still work with items that we store in a list. 
+
+	flavors = ['mint', chocolate', 'strawberry', 'vanilla']
+	print(flavors)
+	
+	fav_flavor = 'mint'
+	flavors.remove(flavors[0]
+	print(flavors)
+	print("\nMy favorite flavor is " + fav_flavor) 
+	# the \n is to print that statement on a new line
+This is what will print out:
+
+	['mint', 'chocolate', 'strawberry', 'vanilla']
+	['chocolate', 'strawberry', 'vanilla']
+	
+	My favorite flavor is vanilla
+You can also remove and item but still work with it, using the pop() method. 
+	
+	flavors = ['mint', chocolate', 'strawberry', 'vanilla']
+	fav_flavor = flavors.pop(0)
+	print("My favorite flavor is " + fav_flavor)
 This is what will print out:
 	
-	['Anna', 'Matt', 'Josh']
-If you do not put a starting index, the first number before the colon, Python will start from the beginning of the list.
+	My favorite flavor is mint
+If you don't put a certain index in the parentheses of the pop() method, it will remove the item at the end of the list. 
 
-	workers = ['Ava', 'Anna', 'Matt', 'Josh', 'Liz']
-	print(workers[:4])
+**Ordering a List:** There are also methods that you can use to order the items in your list. Let's say we want to order the flavors in our list alphabetically. We can use the sort method to do so:
+
+	flavors = ['mint', chocolate', 'strawberry', 'vanilla']
+	flavors.sort()
+	print(flavors)
 This is what will print out.
 
-	['Ava', 'Anna', 'Matt', 'Josh']
+	['chocolate', 'mint", 'strawberry', 'vanilla']
 	
-If you don't put an ending index, the number after the colon, Python will go all the way to the end of the list.
+You can also print the list in a reverse alphabetical order, by passing an argument in the sort method reverse, and setting it to TRUE.
 	
-	workers = ['Ava', 'Anna', 'Matt', 'Josh', 'Liz']
-	print(workers[2:])
+	flavors = ['mint', chocolate', 'strawberry', 'vanilla']
+	flavors.sort(reverse = True)
+	print(flavors)
 	
-This is what will print out:
+This is what will print out.
 
-	['Matt', 'Josh', 'Liz']
-You can also use negative indexes and Python will move from the back of the list. For example, let's say we wanted to print out the last three employees's names. 
+	['vanilla', 'strawberry', 'mint', 'chocolate']
+	
+You can also use a list in a sorted order, without having to change the order of your original list, by using the sorted method. 
 
-	workers = ['Ava', 'Anna', 'Matt', 'Josh', 'Liz']
-	print(workers[-3:])
-	
-This is what will print out:
-
-	['Matt', 'Josh', 'Liz']
-We can loop through slices of lists just like we can with whole lists. 
-
-	workers = ['Ava', 'Anna', 'Matt', 'Josh', 'Liz']
-	
-	print("These are the employees that will get a raise")
-	for worker in workers[:3]
-		print(worker.title())
-		
-This is what will print out:
-	
-	These are the employees that will get a raise
-	Ava
-	Anna
-	Matt
-We can also copy one list into another. Let's say that we have two students who are picking out food from a menu at a diner.
-	
-	my_food = ['burger', 'fries', 'milkshake']
-	friend_food = [:]
-	
-	print("I'd like to order: ")
-	print(my_food)
-	
-	print('\nAnd I'd like to order: ")
-	print(friend_food) 
+	flavors = ['mint', chocolate', 'strawberry', 'vanilla']
+	print(flavors)
+	print(sorted(flavors))
 	
 This is what will print out:
 
-	I'd like to order:
-	['burger', 'fries', 'milkshake']
-	
-	And I'd like to order:
-	['burger', 'fries', 'milkshake']
+	['mint', chocolate', 'strawberry', 'vanilla']
+	['chocolate', 'mint", 'strawberry', 'vanilla']
+You can print a list out in the reverse of its original order by using the reverse() method. 
 
-**Tuples:**
-You can treat	copies of lists as totally different lists. 
-Now, as an end to this lesson, let's learn about lists that cannot change, unlike regular lists. This type of list is known as a tuple. 
+	flavors = ['mint', chocolate', 'strawberry', 'vanilla']
+	print(flavors)
 
-We need to use parentheses () instead of square brackets [] when defining a tuple, as shown below. Let's say we want to make a shape with certain measurements. 
-
-	square = (50, 50)
-	print(square[0])
-	print(square[1])
-If we try to change the values of the items in the list, Python will return an error message.
-
-You can loop through tuples as you would with a list. You can't change the values in a tuple, but you can redefine the tuple to contain new values.
-
-	shape = (50, 50)
-	print("Dimensions:")
-    for dimension in dimensions:
-       print(dimension)
-	
-	shape = (100, 100)
-	print("\nNew Dimensions:")
-    for dimension in dimensions:
-       print(dimension)
-
+	flavors.reverse()
+	print(flavors)
 This is what will print out:
 
-	Dimensions:
-	50
-	50
+	['mint', chocolate', 'strawberry', 'vanilla']
+	['vanilla', 'strawberry', 'chocolate', 'mint']
 	
-	New Dimensions
-	100
-	100
-    
-    
-    
+If you want to find out the number of items in a list, or the length of a list, you can use the len() function:
 
-
-   
-
+	flavors = ['mint', chocolate', 'strawberry', 'vanilla']
+	len(flavors)
+	4
+That's it! Now you know the basic concepts of lists. 
+	 
+	

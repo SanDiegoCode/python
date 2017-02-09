@@ -10,12 +10,13 @@ pages:
 - Lesson 1:  lesson1.md
 - Lesson 2: lesson2.md
 - Lesson 3: lesson3.md
+- Lesson 4: lesson4.md
 # Repository
-#repo_name: 'GitHub'
-#repo_url: 'https://github.com/ronakdev/apush'
+repo_name: 'GitHub'
+repo_url: 'https://github.com/sandiegocode/python'
 
 # Copyright
-copyright: © Ronak Shah
+copyright: © San Diego Code
 
 # Documentation and theme
 theme: 'material'
@@ -38,3 +39,7 @@ extra:
 # Extensions
 markdown_extensions:
   - admonition
+
+#Compiler Code
+extra_css: [compiler.css]
+extra_javascript: [compiler.js]

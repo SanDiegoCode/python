@@ -16,6 +16,5 @@ Here you will learn the basics of python.
 	* Submit a pull request to the repository on [Github](https://github.com/sandiegocode/python)
 
 ##Creators
-**Lead Curriculum Designer**: Maleeha Imran
-
-**Website Manager**: Ronak Shah
+* Maleeha Imran
+* Ronak Shah
