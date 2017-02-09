@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="no-js ie6"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    
+      
+        <title>Lesson 4 - Python Tutorials</title>
+      
+      
+      
+        <link rel="canonical" href="https://sandiegocode/python/lesson4/">
+      
+      
+        <meta name="author" content="San Diego Code">
+      
+    
+    <meta property="og:url" content="https://sandiegocode/python/lesson4/">
+    <meta property="og:title" content="Python Tutorials">
+    <meta property="og:image" content="https://sandiegocode/python/lesson4//../">
+    <meta name="apple-mobile-web-app-title" content="Python Tutorials">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon-e565ddfa3b.ico">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon-e565ddfa3b.ico">
+    <style>
+      @font-face {
+      	font-family: 'Icon';
+      	src: url('../assets/fonts/icon.eot?52m981');
+      	src: url('../assets/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+      		   url('../assets/fonts/icon.woff?52m981')
+               format('woff'),
+      		   url('../assets/fonts/icon.ttf?52m981')
+               format('truetype'),
+      		   url('../assets/fonts/icon.svg?52m981#icon')
+               format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="../assets/stylesheets/application-a422ff04cc.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/palettes-05ab2406df.css">
+    
+    
+      
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Mono">
+      <style>
+        body, input {
+          font-family: 'Roboto', Helvetica, Arial, sans-serif;
+        }
+        pre, code {
+          font-family: 'Roboto Mono', 'Courier New', 'Courier', monospace;
+        }
+      </style>
+    
+    
+      <link rel="stylesheet" href="../compiler.css">
+    
+    <script src="../assets/javascripts/modernizr-4ab42b99fd.js"></script>
+    
+  </head>
+  
+  
+  
+  <body class="palette-primary-purple palette-accent-light-blue">
+    
+      
+      
+    
+    <div class="backdrop">
+      <div class="backdrop-paper"></div>
+    </div>
+    <input class="toggle" type="checkbox" id="toggle-drawer">
+    <input class="toggle" type="checkbox" id="toggle-search">
+    <label class="toggle-button overlay" for="toggle-drawer"></label>
+    <header class="header">
+      <nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+          <span class="path">
+            
+          </span>
+        
+        Lesson 4
+      </div>
+    </div>
+    
+    
+      
+      <div class="button button-github" role="button" aria-label="GitHub">
+        <a href="https://github.com/sandiegocode" title="@sandiegocode on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+      </div>
+    
+    <div class="button button-search" role="button" aria-label="Search">
+      <label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
+    </div>
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+    </header>
+    <main class="main">
+      
+      <div class="drawer">
+        <nav aria-label="Navigation">
+  
+  <a href="https://github.com/sandiegocode/python" class="project">
+    <div class="banner">
+      
+      <div class="name">
+        <strong>
+          Python Tutorials
+          <span class="version">
+            
+          </span>
+        </strong>
+        
+          <br>
+          sandiegocode/python
+        
+      </div>
+    </div>
+  </a>
+  <div class="scrollable">
+    <div class="wrapper">
+      
+        <ul class="repo">
+          <li class="repo-download">
+            
+            <a href="https://github.com/sandiegocode/python/archive/master.zip" target="_blank" title="Download" data-action="download">
+              <i class="icon icon-download"></i> Download
+            </a>
+          </li>
+          <li class="repo-stars">
+            <a href="https://github.com/sandiegocode/python/stargazers" target="_blank" title="Stargazers" data-action="star">
+              <i class="icon icon-star"></i> Stars
+              <span class="count">&ndash;</span>
+            </a>
+          </li>
+        </ul>
+        <hr>
+      
+      <div class="toc">
+        <ul>
+          
+            
+  <li>
+    <a class="" title="Home" href="..">
+      Home
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Lesson 1" href="../lesson1/">
+      Lesson 1
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Lesson 2" href="../lesson2/">
+      Lesson 2
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Lesson 3" href="../lesson3/">
+      Lesson 3
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="current" title="Lesson 4" href="./">
+      Lesson 4
+    </a>
+    
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="Lesson 3 - Loops" href="#lesson-3-loops">
+                Lesson 3 - Loops
+              </a>
+            </li>
+          
+        </ul>
+      
+    
+  </li>
+
+          
+        </ul>
+        
+          <hr>
+          <span class="section">The author</span>
+          <ul>
+            
+            
+              
+              <li>
+                <a href="https://github.com/sandiegocode" target="_blank" title="@sandiegocode on GitHub">
+                  @sandiegocode on GitHub
+                </a>
+              </li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+      </div>
+      <article class="article">
+        <div class="wrapper">
+          
+            <h1>Lesson 4</h1>
+          
+          <h2 id="lesson-3-loops">Lesson 3 - Loops</h2>
+<p>In the last lesson, we learned about <strong>lists</strong>, groups of items that are sorted in a certain order. In this lesson, we are going to learn about how we can easily go through the items in a list, using loops. </p>
+<p><strong>Loops:</strong></p>
+<p>A <strong>loop</strong> is basically a block of code with certain instructions inside that are repeated continously until a certain condition is met. Using loops, we can perform certain actions on every item in a list. For example, let's say we have a group of students, and we want to print out the name of each student in that group. It would be really annoying if we had to print out every student's name one at a time, especially if we had a really big class. We can use a loop print out each student's name with ease.</p>
+<pre><code>students = ['john', 'rose', 'harry']
+for student in students:
+    print(student)
+</code></pre>
+<p>The second line in this block of code, tells Python that it should take one of the names that is stored in the list 'students' and put that name in the variable 'student'. In the line after that, we tell Python to print out the name of 'student'. Python will then repeat the second and third lines for each student in the list. This is what will print out"</p>
+<pre><code>john
+rose
+harry
+</code></pre>
+<p>In for loops, Python will look at the first value in the list "students" and put that value in the variable 'student'. Then, Python will look for the next instruction in the loop, which in this case, is to print out the value of the variable 'student'. Then Python will print out: john. </p>
+<p>There are still more values inside of the list, don't forget about rose and harry. Python will then go back to the second value in the list, put that value in the variable 'student'. Then, it will print out the value inside 'student', which is now the second value of the list, rose. Then, because there is still one more value in the list, Python will go back and repeat the steps for harry. It will stop repeating after that, because there are no more values left in the list.</p>
+<p>You can do a lot of different things inside of loops. You can also add in as many lines as you want.</p>
+<p>What if we want to do something after the loop? Well, any line after the loop that is not indented will execute once, and won't repeat.</p>
+<pre><code>students = ['john', 'rose', 'harry']
+for student in students:
+    print(student)
+    print("Nice job, " + student.title() + ".\n")
+
+print('Everyone did really well on their math quiz')
+</code></pre>
+<p>This is what will print out:</p>
+<pre><code>john
+Nice job, John.
+
+rose
+Nice job, Rose.
+
+harry
+Nice job, Harry.
+
+Everyone did really well on their math quiz
+</code></pre>
+<p>It's important to keep in mind that we don't make any mistakes in our indentation. Here are some things to keep in mind while coding:</p>
+<p>Python will let you know when you forget to indent something. This is shown here:</p>
+<pre><code>magicians = ['alice', 'david', 'carolina']
+for magician in magicians:
+print(magician)
+</code></pre>
+<p>This will show up because we forgot to indent the print line. </p>
+<pre><code>File "students.py", line 3
+print(student)
+    ^
+IndentationError: expected an indented block
+</code></pre>
+<p>You can also make a logical error with loops, as shown here below:</p>
+<pre><code>students = ['john', 'rose', 'harry']
+for student in students:
+    print("Nice job, " + student.title() + ".\n")
+print("I hope you do well on the next one, " + 
+student.title())
+</code></pre>
+<p>This is what will print out:</p>
+<pre><code>Nice job, John.
+
+Nice job, Rose.
+
+Nice job, Harry.
+
+I hope you do well on the next one, John
+</code></pre>
+<p>The last message was not repeated for rose and harry, because we did not indent that print command. 
+The code will still work, but it won't do what you wanted it to do.</p>
+<p>Python will also tell you if you indented something when you did not need to. For example, </p>
+<pre><code>message = "Hello class!"
+    print(message)
+</code></pre>
+<p>This is what will happen:</p>
+<pre><code>File "message.py", line 2
+print(message)
+^
+IndentationError: unexpected indent
+</code></pre>
+<p>Also, you will get a syntax error notification if you forget the colon after you write out your for loop. Don't forget the colon, as it is not always easy to find your mistake if you happen to forget it. </p>
+<p><strong>Numerical Functions with Lists:</strong> Let's take a break from loops for now, and talk a bit more about lists. So far, we have made lists with String values inside of them, values inside the " ". However, we may need to make list with other types of data. Lists can be pretty useful if we want to deal with a bunch of numbers. </p>
+<p>Let's suppose, we want to make a list of numbers and print them out. We can use Python's range() function, to have Python generate numbers in a certain range. For example:</p>
+<pre><code>for num in range(1, 8)
+    print(num)
+</code></pre>
+<p>This is what will print out:</p>
+<pre><code>1
+2
+3
+4
+5
+6
+7
+</code></pre>
+<p>The number 8 did not print out, because the range() function tells Python that it should start from the first number in the parentheses, and stop at the last one. Becasues Python stops the loop when it reaches the last number, the last number will never be printed out. If we wanted to print out the number 8 as well, we could try this:</p>
+<pre><code>for num in range(1, 9)
+    print(num)
+</code></pre>
+<p>This is what will print out:</p>
+<pre><code>1
+2
+3
+4
+5
+6
+7
+8
+</code></pre>
+<p>There are a couple of functions we can use on a list of numbers. For example, we can find the minimum, maximum, and sum of a list of numbers with ease.</p>
+<pre><code>numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+min(numbers)
+max(numbers)
+sum(numbers)
+</code></pre>
+<p>This is the output:</p>
+<pre><code>0
+9
+45
+</code></pre>
+<p>If we want to split apart, or slice a list into different parts, we can use the following code to do so. Let's say we have a group of employees at a clothing store.</p>
+<pre><code>workers = ['Ava', 'Anna', 'Matt', 'Josh', 'Liz']
+print(workers[0:3])
+</code></pre>
+<p>This is what will print out:</p>
+<pre><code>['Ava', 'Anna', 'Anna']
+</code></pre>
+<p>Let's say we wanted to give employees 1 to 4 a raise.</p>
+<pre><code>workers = ['Ava', 'Anna', 'Matt', 'Josh', 'Liz']
+print(workers[1:4])
+</code></pre>
+<p>This is what will print out:</p>
+<pre><code>['Anna', 'Matt', 'Josh']
+</code></pre>
+<p>If you do not put a starting index, the first number before the colon, Python will start from the beginning of the list.</p>
+<pre><code>workers = ['Ava', 'Anna', 'Matt', 'Josh', 'Liz']
+print(workers[:4])
+</code></pre>
+<p>This is what will print out.</p>
+<pre><code>['Ava', 'Anna', 'Matt', 'Josh']
+</code></pre>
+<p>If you don't put an ending index, the number after the colon, Python will go all the way to the end of the list.</p>
+<pre><code>workers = ['Ava', 'Anna', 'Matt', 'Josh', 'Liz']
+print(workers[2:])
+</code></pre>
+<p>This is what will print out:</p>
+<pre><code>['Matt', 'Josh', 'Liz']
+</code></pre>
+<p>You can also use negative indexes and Python will move from the back of the list. For example, let's say we wanted to print out the last three employees's names. </p>
+<pre><code>workers = ['Ava', 'Anna', 'Matt', 'Josh', 'Liz']
+print(workers[-3:])
+</code></pre>
+<p>This is what will print out:</p>
+<pre><code>['Matt', 'Josh', 'Liz']
+</code></pre>
+<p>We can loop through slices of lists just like we can with whole lists. </p>
+<pre><code>workers = ['Ava', 'Anna', 'Matt', 'Josh', 'Liz']
+
+print("These are the employees that will get a raise")
+for worker in workers[:3]
+    print(worker.title())
+</code></pre>
+<p>This is what will print out:</p>
+<pre><code>These are the employees that will get a raise
+Ava
+Anna
+Matt
+</code></pre>
+<p>We can also copy one list into another. Let's say that we have two students who are picking out food from a menu at a diner.</p>
+<pre><code>my_food = ['burger', 'fries', 'milkshake']
+friend_food = [:]
+
+print("I'd like to order: ")
+print(my_food)
+
+print('\nAnd I'd like to order: ")
+print(friend_food)
+</code></pre>
+<p>This is what will print out:</p>
+<pre><code>I'd like to order:
+['burger', 'fries', 'milkshake']
+
+And I'd like to order:
+['burger', 'fries', 'milkshake']
+</code></pre>
+<p><strong>Tuples:</strong>
+You can treat   copies of lists as totally different lists. 
+Now, as an end to this lesson, let's learn about lists that cannot change, unlike regular lists. This type of list is known as a tuple. </p>
+<p>We need to use parentheses () instead of square brackets [] when defining a tuple, as shown below. Let's say we want to make a shape with certain measurements. </p>
+<pre><code>square = (50, 50)
+print(square[0])
+print(square[1])
+</code></pre>
+<p>If we try to change the values of the items in the list, Python will return an error message.</p>
+<p>You can loop through tuples as you would with a list. You can't change the values in a tuple, but you can redefine the tuple to contain new values.</p>
+<pre><code>shape = (50, 50)
+print("Dimensions:")
+for dimension in dimensions:
+   print(dimension)
+
+shape = (100, 100)
+print("\nNew Dimensions:")
+for dimension in dimensions:
+   print(dimension)
+</code></pre>
+<p>This is what will print out:</p>
+<pre><code>Dimensions:
+50
+50
+
+New Dimensions
+100
+100
+</code></pre>
+          <aside class="copyright" role="note">
+            
+              © San Diego Code &ndash;
+            
+            Documentation built with
+            <a href="http://www.mkdocs.org" target="_blank">MkDocs</a>
+            using the
+            <a href="http://squidfunk.github.io/mkdocs-material/" target="_blank">
+              Material
+            </a>
+            theme.
+          </aside>
+          
+            <footer class="footer">
+              
+  <nav class="pagination" aria-label="Footer">
+    <div class="previous">
+      
+        <a href="../lesson3/" title="Lesson 3">
+          <span class="direction">
+            Previous
+          </span>
+          <div class="page">
+            <div class="button button-previous" role="button" aria-label="Previous">
+              <i class="icon icon-back"></i>
+            </div>
+            <div class="stretch">
+              <div class="title">
+                Lesson 3
+              </div>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+    <div class="next">
+      
+    </div>
+  </nav>
+
+            </footer>
+          
+        </div>
+      </article>
+      <div class="results" role="status" aria-live="polite">
+        <div class="scrollable">
+          <div class="wrapper">
+            <div class="meta"></div>
+            <div class="list"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      var base_url = '..';
+      var repo_id  = 'sandiegocode/python';
+    </script>
+    <script src="../assets/javascripts/application-997097ee0c.js"></script>
+    
+      <script src="../compiler.js"></script>
+    
+    
+  </body>
+</html>
