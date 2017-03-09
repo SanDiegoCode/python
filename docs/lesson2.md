@@ -1,68 +1,1 @@
-## Lesson 2 - Control Structures/ Input-Output
-
-In this lesson we'll go over basic logic and how to take in input from the user.
-
-First, we're going to introduce a new data type to you - the boolean
-
-**Booleans** contain either a true or false value. For example, if we wanted to make a variable that stored the value of whether it was raining or not, we'd do:
-
-	isRaining = false
-
-But what use is a variable if we can't do anything with it? Sure, we can print it, but that's pretty limiting. This is where **control structures** come into play.
-
-**Control Structure:** if/else statement
-
-These are the most used control structures you'll use, and probably the go-to one's you will need. These are best explained with an example, so I'm going to show you how to determine whether it is raining (adding onto our previous example)
-
-	if (isRaining == True):
-		print("Get an umbrella!")
-	else:
-		print("No umbrella needed")
-		
-As you can see, in this piece of code, we're able to determine whether it is raining or not. Now what if we want to classify different **levels** of rain? For this, we'd use an integer.
-
-	weatherLevel = 0 
-
-Now, we can rewrite the above method.
-
-	if (weatherLevel == 0):
-		print("Get an umbrella!")
-	else:
-		print("No umbrella needed")
-
-As you see here, we are using a new operator: **==**
-
-Unlike **=**, the **==** checks for **equality**, rather than assigning a value (which is what **=** does)
-
-There are 5 types of **control operators**
-
-| Operator | What it Means |         
-| -------- |-------------|
-| **==** | Equals|
-| **!=** | Not Equals|
-| **>**  | Greater Than|
-| **>=** | Greater Than or Equal To|
-| **<**  | Less Than|
-| **<=**  | Less Than or Equal To|
-
-
-We can also **combine operators**, using the following operators
-
-| Structure | What it does|
-| ------- | -------- | 
-| ```or``` | Or |
-| ```and``` | Or |
-
-Lets use these in an example.
-
-	isRaining = True
-	weatherLevel = 2
-	
-	if (isRaining):
-		if (weatherLevel == 1):
-			print("bring an umbrella")
-		elif (weatherLevel >= 2):
-			print("don't go outside!")
-	else:
-		print("perfect weather!")
-
+## Lesson 2 - Control Structures/ Input-OutputIn this lesson we'll go over basic logic and how to take in input from the user.First, we're going to introduce a new data type to you - the boolean**Booleans** contain either a true or false value. For example, if we wanted to make a variable that stored the value of whether it was raining or not, we'd do:	isRaining = falseBut what use is a variable if we can't do anything with it? Sure, we can print it, but that's pretty limiting. This is where **control structures** come into play.**Control Structure:** if/else statementThese are the most used control structures you'll use, and probably the go-to one's you will need. These are best explained with an example, so I'm going to show you how to determine whether it is raining (adding onto our previous example)	if (isRaining == True):		print("Get an umbrella!")	else:		print("No umbrella needed")		As you can see, in this piece of code, we're able to determine whether it is raining or not. Now what if we want to classify different **levels** of rain? For this, we'd use an integer.	weatherLevel = 0 Now, we can rewrite the above method.	if (weatherLevel == 0):		print("Get an umbrella!")	else:		print("No umbrella needed")As you see here, we are using a new operator: **==**Unlike **=**, the **==** checks for **equality**, rather than assigning a value (which is what **=** does)There are 5 types of **control operators**| Operator | What it Means |         | -------- |-------------|| **==** | Equals|| **!=** | Not Equals|| **>**  | Greater Than|| **>=** | Greater Than or Equal To|| **<**  | Less Than|| **<=**  | Less Than or Equal To|We can also **combine operators**, using the following operators| Structure | What it does|| ------- | -------- | | ```or``` | Or || ```and``` | Or |Lets use these in an example.	isRaining = True	weatherLevel = 2		if (isRaining):		if (weatherLevel == 1):			print("bring an umbrella")		elif (weatherLevel >= 2):			print("don't go outside!")	else:		print("perfect weather!")###Input from the UserUp until now we have defined variables like strings inside the program itself to give the computer a starting point. However, now we will be able to ask the user for input without them having to enter it inside your code.The format for the input function is	input('prompt')We can ask for someone's name, then output a greeting, for example:	name = input('What is your name?\n')	print('Nice to meet you, ', name)This returns		What is your name?	<input>	Nice to meet you, <input>Note that "input" would be replaced with whatever you type in at the prompt.We can do the same with numbers, for example, in this program that asks for your age:	age = input('What is your age?\n')Now we can use what we learned about control structures to print out custom messages.	if(age < 18):		print("you're not an adult yet")	elif(age < 26):		print("you're a young adult!")	elif(age < 65):		print("you're an adult")	elif(age < 0):		print("you are not born yet")	else:		print("wow you're old!")				
