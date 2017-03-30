@@ -43,5 +43,5 @@ markdown_extensions:
   - admonition
 
 #Compiler Code
-extra_css: [compiler.css]
-extra_javascript: [compiler.js, main.js]
+extra_css: [compiler.css, button.css]
+extra_javascript: [imports.js, compiler.js, main.js]
