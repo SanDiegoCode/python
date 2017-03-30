@@ -1,32 +1,3 @@
-
-.sidebar {
-  position: fixed; 
-  top: 0px; 
-  right: 0px; 
-  width: 50px; 
-  height: 100vh; 
-  background-color:#B450C4;
-}
-.a {
-display: table;
-position: absolute;
-height: 100%;
-width: 100%;
-}
-
-.b {
-display: table-cell;
-vertical-align: middle;
-}
-
-.c {
-margin-left: auto;
-margin-right: auto; 
-height: /* Your size in px, else it will expand to your screen size!*/
-width:  /* Your size in px, else it will expand to your screen size!*/
-}
-
-#contentframe {
-  display: none;
-  
+.md-content__edit {
+    display: none !important;
 }

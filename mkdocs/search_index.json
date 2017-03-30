@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Welcome to Python\n\n\nHere you will learn the basics of python.\n\n\nFAQs\n\n\n\n\n\n\nWhere do I run the code?\n\n\n\n\nYou can either \ninstall python\n  (Windows, Mac, and Linux) or \ncode online with Tutorials Point\n (All Platforms ) \n\n\n\n\n\n\n\n\nWhat if I need help?\n \n\n\n\n\nWe're only \nan email\n away :D\n\n\n\n\n\n\nWhat if I'm not a part of SD Code?\n \n\n\nDon't worry about it! This resource is free to use by anyone!\n\n\n\n\n\n\nCan I host this on my website?\n\n\nSure, as long as you give credit and link it to our website\n\n\n\n\n\n\nHow can I contribute?\n\n\nSubmit a pull request to the repository on \nGithub\n\n\n\n\n\n\n\n\nCreators\n\n\n\n\nMaleeha Imran\n\n\nRonak Shah", 
+            "text": "Welcome to Python\n\n\nHere you will learn the basics of python.\n\n\nFAQs\n\n\n\n\n\n\nWhere do I run the code?\n\n\n\n\nOption 1: \nInstalling Python\n  (Windows, Mac, and Linux) \n\n\nOption 2: \nCode Online with CodeSkulptor\n (All Platforms ) \n\n\nOption 3: Code using the \nside compiler\n (All Platforms)\n\n\n\n\n\n\n\n\nWhat if I need help?\n \n\n\n\n\nWe're only \nan email\n away :D\n\n\nOptionally, you can attend our bimonthly coding club meetings at the Rancho Penasquitos Library\n\n\n\n\n\n\nWhat if I'm not a part of SD Code?\n \n\n\nDon't worry about it! This resource is free to use by anyone!\n\n\n\n\n\n\nCan I host this on my website?\n\n\nSure, as long as you give credit and link it to our website\n\n\n\n\n\n\nHow can I contribute?\n\n\nSubmit a pull request to the repository on \nGithub\n\n\n\n\n\n\n\n\nCreators\n\n\n\n\nRonak Shah\n\n\nMaleeha Imran\n\n\nNir Levin", 
             "title": "Home"
         }, 
         {
@@ -12,12 +12,12 @@
         }, 
         {
             "location": "/#faqs", 
-            "text": "Where do I run the code?   You can either  install python   (Windows, Mac, and Linux) or  code online with Tutorials Point  (All Platforms )      What if I need help?     We're only  an email  away :D    What if I'm not a part of SD Code?    Don't worry about it! This resource is free to use by anyone!    Can I host this on my website?  Sure, as long as you give credit and link it to our website    How can I contribute?  Submit a pull request to the repository on  Github", 
+            "text": "Where do I run the code?   Option 1:  Installing Python   (Windows, Mac, and Linux)   Option 2:  Code Online with CodeSkulptor  (All Platforms )   Option 3: Code using the  side compiler  (All Platforms)     What if I need help?     We're only  an email  away :D  Optionally, you can attend our bimonthly coding club meetings at the Rancho Penasquitos Library    What if I'm not a part of SD Code?    Don't worry about it! This resource is free to use by anyone!    Can I host this on my website?  Sure, as long as you give credit and link it to our website    How can I contribute?  Submit a pull request to the repository on  Github", 
             "title": "FAQs"
         }, 
         {
             "location": "/#creators", 
-            "text": "Maleeha Imran  Ronak Shah", 
+            "text": "Ronak Shah  Maleeha Imran  Nir Levin", 
             "title": "Creators"
         }, 
         {
