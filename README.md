@@ -1,12 +1,12 @@
-#Python Tutorials
+# Python Tutorials
 
 by San Diego Code
 
 
-###Mission
+### Mission
 To create a useful and easy-to-follow python resource guide for people of all ages
 
-###Contributing
+### Contributing
 Anyone can contribute!
 
 Steps to contribute:
@@ -16,8 +16,12 @@ Steps to contribute:
 3. Submit a pull request, and we'll handle the rest!
 
 
-###Credits
-Head of Curiculum: Maleeha Imran
+### Credits
+Curriculum Writers:
+- Nir Levin
+- Ronak Shah
+- Maleeha Imran
 
-Website / Repo Manager: Ronak Shah
+Website / Repo Manager: 
+- Ronak Shah
 
