@@ -1,0 +1,590 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A tutorial to python">
+      
+      
+        <link rel="canonical" href="https://sandiegocode/python/lesson3/">
+      
+      
+        <meta name="author" content="San Diego Code">
+      
+      
+        <link rel="shortcut icon" href="../assets/images/favicon.png">
+      
+      <meta name="generator" content="mkdocs-0.16.1, mkdocs-material-1.2.0">
+    
+    
+      
+        <title>Lesson 3 - Python Tutorials</title>
+      
+    
+    
+      <script src="../assets/javascripts/modernizr-56ade86843.js"></script>
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application-e17eeafcbc.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-892b79c5c5.palette.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../compiler.css">
+    
+      <link rel="stylesheet" href="../button.css">
+    
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="purple" data-md-color-accent="light-blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href=".." title="Python Tutorials" class="md-icon md-icon--home md-header-nav__button">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+            
+            Lesson 3
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <div class="md-search__overlay"></div>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <div class="md-header-nav__source">
+          
+            
+
+
+  
+
+
+  <a href="https://github.com/sandiegocode/python" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    Python Tutorials
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/sandiegocode/python" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../lesson1/" title="Lesson 1" class="md-nav__link">
+      Lesson 1
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../lesson2/" title="Lesson 2" class="md-nav__link">
+      Lesson 2
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+    <a href="./" title="Lesson 3" class="md-nav__link md-nav__link--active">
+      Lesson 3
+    </a>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../lesson4/" title="Lesson 4" class="md-nav__link">
+      Lesson 4
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../lesson5/" title="Lesson 5" class="md-nav__link">
+      Lesson 5
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../lesson6/" title="Lesson 6" class="md-nav__link">
+      Lesson 6
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../challenges/" title="Challenges" class="md-nav__link">
+      Challenges
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lesson-2-lists" title="Lesson 2 - Lists" class="md-nav__link">
+    Lesson 2 - Lists
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lists" title="Lists" class="md-nav__link">
+    Lists
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+               
+                 <a href="https://github.com/sandiegocode/python/edit/master/docs/lesson3.md" title="Edit this page" class="md-icon md-content__edit">edit</a>
+               
+              
+                
+                  <h1>Lesson 3</h1>
+                
+                <h2 id="lesson-2-lists">Lesson 2 - Lists</h2>
+<p>Now that we know a bit about variables and data types, we can now learn how we can put a bunch of data into one place and how to easily access it, through lists. </p>
+<p>So what exactly is a <strong>list</strong>? A <strong>list</strong> is a group of items that are sorted in a certain order. A list usually contains more than one item, but those items can be whatever you want them to be. You can make a list of places you have visited or a list of numbers from 1-100, whatever you would like. </p>
+<h2 id="lists">Lists</h2>
+<p>In Python, you can make a list using square brackets ([]), and inside your list, you can seperate the different items by using commas. For example, let's say we have a group that contains different flavors of ice cream. We want to put those flavors in a list. Let's call that list 'flavors'. </p>
+<pre><code>flavors = ['chocolate', 'strawberry','vanilla']
+</code></pre>
+<p>Now we have made a list of flavors. Let's print out that list.</p>
+<pre><code>print(flavors)
+</code></pre>
+<p>When Python prints out the list flavors, its going to print the whole thing out, including the square brackets.</p>
+<pre><code>['chocolate', 'strawberry', 'vanilla']
+</code></pre>
+<p>Hmm, I'm sure we could print that out in a nicer format. Let's learn how we can access different elements in a list.'</p>
+<p>The elements in a list are ordered in a certain way, so we can tell Python to get a certain element from that list by telling Python the position, or index, of the element we want. To do that, all we need to do is write the name of our list, and follow it with the index in square brackets. For example, let's say I want vanilla ice cream:</p>
+<pre><code>print(flavors[2])
+</code></pre>
+<p>Note: Most programming langauges including Python, consider the first item in a list, to have the position/index 0, not 1. The second item will be at index 1, the third at index 2, and so on. </p>
+<pre><code>vanilla
+</code></pre>
+<p>If you want tot get the last item in a list, you can use the index, -1. </p>
+<pre><code>print(flavors[-1])
+vanilla
+</code></pre>
+<p>You can use the index -2, for the second last item in a list, and so on.</p>
+<p>You can also use any String functions from our previous lesson on items in a list. Like the title() method below:</p>
+<pre><code>print(flavors[2].title())
+Vanilla
+</code></pre>
+<p>You can use items in a list just like you would use any other variable.</p>
+<pre><code>print("My favorite ice cream flavor is " + flavors[2])
+My favorite ice cream flavor is vanilla
+</code></pre>
+<p><strong>Changing Items:</strong> In your future programs, you may need to change, add, or remove items from a list. Let's start, by saying, we want to change one of the flavors in our list, from vanilla to mint, but we do not want to change any other flavors. Here is our original list.   </p>
+<pre><code>flavors = ['chocolate', 'strawberry','vanilla']
+print(flavors)
+</code></pre>
+<p>Let's change the value at index 2, from vanilla to mint.</p>
+<pre><code>flavors[2] = 'mint'
+print(flavors)
+</code></pre>
+<p>Here is what happens when we print out our original list.</p>
+<pre><code>['chocolate', 'strawberry', 'vanilla']
+</code></pre>
+<p>And this is what happens when we print out our list after we changed vanilla to mint.</p>
+<pre><code>['chocolate', 'strawberry', 'mint']
+</code></pre>
+<p><strong>Adding Items:</strong> As shown, you can change any value in a list.Now, let's say you wanted to add more items to your list. Let's say we wanted to add the flavor, berry, to our original list. We can do this in a couple different ways. 
+One way we can add an item is by using the append() method. This method will add an item to the end of our list. </p>
+<p>Let's print out original list again.</p>
+<pre><code>print(flavors)
+['chocolate', 'strawberry', 'vanilla']
+</code></pre>
+<p>Now, let's try adding berry to the end of our flavors list.</p>
+<pre><code>flavors.append('berry')
+print(flavors)
+</code></pre>
+<p>Using the append() method will not have any effect on the other items in a list.</p>
+<pre><code>['chocolate', 'strawberry', 'vanilla', 'berry']
+</code></pre>
+<p>We can use the append() method to fill out an empty list too.
+Side Note: You can make comments in Python using the # symbol, to make it easier to read through your code.</p>
+<pre><code>flavors = [] #this is an empty list
+flavors.append('chocolate')
+flavors.append('strawberry')
+flavors.append('vanilla')
+flavors.append('berry')
+
+print(flavors)
+</code></pre>
+<p>This is what will print out:</p>
+<pre><code>['chocolate', 'strawberry', 'vanilla', 'berry']
+</code></pre>
+<p>You can also use the insert() method to add different items to your list. This method allows you to add an item in any index in the list. Let's try adding another flavor, mint, to the beginning of our original list.</p>
+<pre><code>flavors = ['chocolate', 'strawberry', 'vanilla']
+flavors.insert(0, 'mint')
+print(flavors)
+</code></pre>
+<p>This is what will print out:</p>
+<pre><code>['mint', 'chocolate', 'strawberry', 'vanilla']
+</code></pre>
+<p><strong>Removing Items:</strong> Okay, now let's say, we don't want to include the mint flavor in our list anymore. Let's learn how to remove an item from a list. You can remove an item from a list using the del statement.</p>
+<pre><code>flavors = ['mint', chocolate', 'strawberry', 'vanilla']
+print(flavors)
+
+del flavors[0]
+print(flavors)
+</code></pre>
+<p>This is what will print out:</p>
+<pre><code>['mint', 'chocolate', 'strawberry', 'vanilla']
+['chocolate', 'strawberry', 'vanilla']
+</code></pre>
+<p>You can also use the remove() method, to remove a value from a list.</p>
+<pre><code>flavors = ['mint', chocolate', 'strawberry', 'vanilla']
+print(flavors)
+
+flavors.remove('mint')
+print(flavors)
+</code></pre>
+<p>This is what will print out:</p>
+<pre><code>['mint', 'chocolate', 'strawberry', 'vanilla']
+['chocolate', 'strawberry', 'vanilla']
+</code></pre>
+<p>We can still work with items that we store in a list. </p>
+<pre><code>flavors = ['mint', chocolate', 'strawberry', 'vanilla']
+print(flavors)
+
+fav_flavor = 'mint'
+flavors.remove(flavors[0]
+print(flavors)
+print("\nMy favorite flavor is " + fav_flavor) 
+# the \n is to print that statement on a new line
+</code></pre>
+<p>This is what will print out:</p>
+<pre><code>['mint', 'chocolate', 'strawberry', 'vanilla']
+['chocolate', 'strawberry', 'vanilla']
+
+My favorite flavor is vanilla
+</code></pre>
+<p>You can also remove and item but still work with it, using the pop() method. </p>
+<pre><code>flavors = ['mint', chocolate', 'strawberry', 'vanilla']
+fav_flavor = flavors.pop(0)
+print("My favorite flavor is " + fav_flavor)
+</code></pre>
+<p>This is what will print out:</p>
+<pre><code>My favorite flavor is mint
+</code></pre>
+<p>If you don't put a certain index in the parentheses of the pop() method, it will remove the item at the end of the list. </p>
+<p><strong>Ordering a List:</strong> There are also methods that you can use to order the items in your list. Let's say we want to order the flavors in our list alphabetically. We can use the sort method to do so:</p>
+<pre><code>flavors = ['mint', chocolate', 'strawberry', 'vanilla']
+flavors.sort()
+print(flavors)
+</code></pre>
+<p>This is what will print out.</p>
+<pre><code>['chocolate', 'mint", 'strawberry', 'vanilla']
+</code></pre>
+<p>You can also print the list in a reverse alphabetical order, by passing an argument in the sort method reverse, and setting it to TRUE.</p>
+<pre><code>flavors = ['mint', chocolate', 'strawberry', 'vanilla']
+flavors.sort(reverse = True)
+print(flavors)
+</code></pre>
+<p>This is what will print out.</p>
+<pre><code>['vanilla', 'strawberry', 'mint', 'chocolate']
+</code></pre>
+<p>You can also use a list in a sorted order, without having to change the order of your original list, by using the sorted method. </p>
+<pre><code>flavors = ['mint', chocolate', 'strawberry', 'vanilla']
+print(flavors)
+print(sorted(flavors))
+</code></pre>
+<p>This is what will print out:</p>
+<pre><code>['mint', chocolate', 'strawberry', 'vanilla']
+['chocolate', 'mint", 'strawberry', 'vanilla']
+</code></pre>
+<p>You can print a list out in the reverse of its original order by using the reverse() method. </p>
+<pre><code>flavors = ['mint', chocolate', 'strawberry', 'vanilla']
+print(flavors)
+
+flavors.reverse()
+print(flavors)
+</code></pre>
+<p>This is what will print out:</p>
+<pre><code>['mint', chocolate', 'strawberry', 'vanilla']
+['vanilla', 'strawberry', 'chocolate', 'mint']
+</code></pre>
+<p>If you want to find out the number of items in a list, or the length of a list, you can use the len() function:</p>
+<pre><code>flavors = ['mint', chocolate', 'strawberry', 'vanilla']
+len(flavors)
+4
+</code></pre>
+<p>That's it! Now you know the basic concepts of lists. </p>
+              
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../lesson2/" title="Lesson 2" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Lesson 2
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../lesson4/" title="Lesson 4" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Lesson 4
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            © San Diego Code
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application-30ac6a1727.js"></script>
+      <script>app.initialize({url:{base:".."}})</script>
+      
+        <script src="../imports.js"></script>
+      
+        <script src="../compiler.js"></script>
+      
+        <script src="../main.js"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>

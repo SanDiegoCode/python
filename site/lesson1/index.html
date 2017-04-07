@@ -1,0 +1,517 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A tutorial to python">
+      
+      
+        <link rel="canonical" href="https://sandiegocode/python/lesson1/">
+      
+      
+        <meta name="author" content="San Diego Code">
+      
+      
+        <link rel="shortcut icon" href="../assets/images/favicon.png">
+      
+      <meta name="generator" content="mkdocs-0.16.1, mkdocs-material-1.2.0">
+    
+    
+      
+        <title>Lesson 1 - Python Tutorials</title>
+      
+    
+    
+      <script src="../assets/javascripts/modernizr-56ade86843.js"></script>
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application-e17eeafcbc.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-892b79c5c5.palette.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../compiler.css">
+    
+      <link rel="stylesheet" href="../button.css">
+    
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="purple" data-md-color-accent="light-blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href=".." title="Python Tutorials" class="md-icon md-icon--home md-header-nav__button">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+            
+            Lesson 1
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <div class="md-search__overlay"></div>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <div class="md-header-nav__source">
+          
+            
+
+
+  
+
+
+  <a href="https://github.com/sandiegocode/python" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    Python Tutorials
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/sandiegocode/python" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+    <a href="./" title="Lesson 1" class="md-nav__link md-nav__link--active">
+      Lesson 1
+    </a>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../lesson2/" title="Lesson 2" class="md-nav__link">
+      Lesson 2
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../lesson3/" title="Lesson 3" class="md-nav__link">
+      Lesson 3
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../lesson4/" title="Lesson 4" class="md-nav__link">
+      Lesson 4
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../lesson5/" title="Lesson 5" class="md-nav__link">
+      Lesson 5
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../lesson6/" title="Lesson 6" class="md-nav__link">
+      Lesson 6
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../challenges/" title="Challenges" class="md-nav__link">
+      Challenges
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#welcome" title="Welcome!" class="md-nav__link">
+    Welcome!
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variable-types" title="Variable Types" class="md-nav__link">
+    Variable Types
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#printing" title="Printing" class="md-nav__link">
+    Printing
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+               
+                 <a href="https://github.com/sandiegocode/python/edit/master/docs/lesson1.md" title="Edit this page" class="md-icon md-content__edit">edit</a>
+               
+              
+                
+                  <h1>Lesson 1</h1>
+                
+                <h2 id="welcome">Welcome!</h2>
+<p>In our first lesson here we will be focusing on learning about <strong>variables</strong> and <strong>data types</strong>. 
+Let's jump right in. </p>
+<p>So what exactly is a variable? You can think of variables as a box where you can store a value. A <strong>value</strong> is information that is related a certain variable. </p>
+<pre><code>statement = "Hello"
+</code></pre>
+<p>Now, we have a variable called statement, with the message "Hello" stored inside. Making variables is pretty simple in Python. Let's print that statement now:</p>
+<pre><code>print(statement)
+</code></pre>
+<p>When you run your program, "Hello" should have been printed out. 
+You can create whatever variables you want, but there are a couple rules that you need to follow when naming your variables:</p>
+<ol>
+<li>
+<p>Variable names cannot start with a number. Variable names can also only contain letters, numbers, and underscores. </p>
+</li>
+<li>
+<p>No spaces should be in your variable names.</p>
+</li>
+<li>
+<p>There are some words that Python has kept for programming functions or keywords, like for, not, try, as, if, and more. You cannot use those words when naming your variables.</p>
+</li>
+</ol>
+<p>Alright, now that we know the rules, let's learn about the different types of data. Programs deal with data a lot, so it's a good idea to understand the different types of data in Python.</p>
+<h2 id="variable-types">Variable Types</h2>
+<p><strong>Strings:</strong> A string is a series of characters. The way you declare, or create a string is just like how we made the variable, statement from earlier; by placing whatever message we want to have in "quotation marks". </p>
+<pre><code>"String"
+</code></pre>
+<p><strong>Integers:</strong> In Python, we can multiply, divide, add, and subtract integers with ease. </p>
+<pre><code>&gt;&gt;&gt;2*5 
+10
+&gt;&gt;&gt;2/1
+2
+&gt;&gt;&gt;2+5
+7
+&gt;&gt;&gt;2-1
+1
+</code></pre>
+<p><strong>Floats:</strong> These are numbers with decimal points. We can peform similar operations(+, -, *, /) on floats like we could on integers, without too much trouble.</p>
+<pre><code>&gt;&gt;&gt;0.2 + 1.3
+1.5
+</code></pre>
+<p>However, we may get a large number of decimal places in the answers to our calculations. Just try to ignore them for now, all Python is doing is trying to give us the most exact number.</p>
+<pre><code>&gt;&gt;&gt;0.2 + 0.1
+.3000000004
+</code></pre>
+<p>Alright, now we know about a couple of different data types in Python. Now let's see what we can do with that data. </p>
+<h2 id="printing">Printing</h2>
+<p>A <strong>method</strong>, is an action that the programming language you are using, whether it be Python or Java, can perform on a certain piece of data.</p>
+<p>For example, let's say that I made a string, and I wanted to change the case(A or a) of certain letters in that string. I could use a couple of different methods to make that happen.</p>
+<pre><code>myName = "ted martinez"
+print(myName.title())
+</code></pre>
+<p>The method I used is title(). When I use that method, this is what Python prints out.</p>
+<pre><code>Ted Martinez
+</code></pre>
+<p>That small dot in front of the word title, is what makes the title() method act on the variable, myName. Sometimes, certain methods will need more information to act, that is why there are parentheses following the word title. </p>
+<p>Here are some other methods you can use to change your strings.</p>
+<pre><code>print(myName.lower())
+print(myName.upper())
+</code></pre>
+<p>Here is what prints out:</p>
+<pre><code>ted martinez
+TED MARTINEZ
+</code></pre>
+<p>You can also combine strings together, using the + sign, as shown below.</p>
+<pre><code>first_name = "Ted"
+last_name = "Martinez"
+full_name = first_name + " " +  last_name
+print(full_name)
+</code></pre>
+<p>We added an extra " " so that there could be a space between the first name and the last name.
+Python should print this out:</p>
+<pre><code>"Ted Martinez"
+</code></pre>
+<p>If you ever want to add a tab to your text, you can add \t when printing out a string.</p>
+<pre><code>print("Hello")
+print("\tHello")
+</code></pre>
+<p>This should print out:</p>
+<pre><code>Hello
+    Hello
+</code></pre>
+<p>You can also have a string break into a new line by using \n.</p>
+<pre><code>print("Hello\nMy name is\nTed")
+</code></pre>
+<p>This should print out:</p>
+<pre><code>Hello
+My name is
+Ted
+</code></pre>
+              
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Home
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../lesson2/" title="Lesson 2" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Lesson 2
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            © San Diego Code
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application-30ac6a1727.js"></script>
+      <script>app.initialize({url:{base:".."}})</script>
+      
+        <script src="../imports.js"></script>
+      
+        <script src="../compiler.js"></script>
+      
+        <script src="../main.js"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>
