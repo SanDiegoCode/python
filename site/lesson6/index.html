@@ -9,7 +9,7 @@
         <meta name="description" content="A tutorial to python">
       
       
-        <link rel="canonical" href="https://sandiegocode/python/lesson2/">
+        <link rel="canonical" href="https://sandiegocode/python/lesson6/">
       
       
         <meta name="author" content="San Diego Code">
@@ -21,7 +21,7 @@
     
     
       
-        <title>Lesson 2 - Python Tutorials</title>
+        <title>Lesson 6 - Python Tutorials</title>
       
     
     
@@ -86,7 +86,7 @@
             
               
             
-            Lesson 2
+            Lesson 6
           
         </span>
       </div>
@@ -209,56 +209,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Lesson 2
-      </label>
-    
-    <a href="./" title="Lesson 2" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../lesson2/" title="Lesson 2" class="md-nav__link">
       Lesson 2
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#lesson-2-control-structures-input-output" title="Lesson 2 - Control Structures/ Input-Output" class="md-nav__link">
-    Lesson 2 - Control Structures/ Input-Output
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#input-from-the-user" title="Input from the User" class="md-nav__link">
-    Input from the User
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -302,11 +257,20 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../lesson6/" title="Lesson 6" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+    <a href="./" title="Lesson 6" class="md-nav__link md-nav__link--active">
       Lesson 6
     </a>
+    
   </li>
 
     
@@ -341,22 +305,9 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#lesson-2-control-structures-input-output" title="Lesson 2 - Control Structures/ Input-Output" class="md-nav__link">
-    Lesson 2 - Control Structures/ Input-Output
+  <a href="#lesson-6-functions" title="Lesson 6: Functions" class="md-nav__link">
+    Lesson 6: Functions
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#input-from-the-user" title="Input from the User" class="md-nav__link">
-    Input from the User
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -371,133 +322,58 @@
           <div class="md-content">
             <article class="md-content__inner md-typeset">
                
-                 <a href="https://github.com/sandiegocode/python/edit/master/docs/lesson2.md" title="Edit this page" class="md-icon md-content__edit">edit</a>
+                 <a href="https://github.com/sandiegocode/python/edit/master/docs/lesson6.md" title="Edit this page" class="md-icon md-content__edit">edit</a>
                
               
                 
-                  <h1>Lesson 2</h1>
+                  <h1>Lesson 6</h1>
                 
-                <h2 id="lesson-2-control-structures-input-output">Lesson 2 - Control Structures/ Input-Output</h2>
-<p>In this lesson we'll go over basic logic and how to take in input from the user.</p>
-<p>First, we're going to introduce a new data type to you - the boolean</p>
-<p><strong>Booleans</strong> contain either a true or false value. For example, if we wanted to make a variable that stored the value of whether it was raining or not, we'd do:</p>
-<pre><code>isRaining = false
+                <h2 id="lesson-6-functions">Lesson 6: Functions</h2>
+<p>So far, we have covered the basics of Python. Variables, data types, lists, loops, control structures, dictionaries. But now it's time for us to start creating our own functions, so that we can make more complex programs.</p>
+<p>What is a function? A <strong>function</strong> is basically something that takes in an input and produces and output. In programming, we use functions to do all sorts of different things. The question here is, how do we make functions in Python?</p>
+<p>Let's say we want to print out someone's name. Let's create a function that does that. In Python, the structure of a basic function is as follows. </p>
+<pre><code>def functionname( parameters):
+    body
+    return
 </code></pre>
-<p>But what use is a variable if we can't do anything with it? Sure, we can print it, but that's pretty limiting. This is where <strong>control structures</strong> come into play.</p>
-<p><strong>Control Structure:</strong> if/else statement</p>
-<p>These are the most used control structures you'll use, and probably the go-to one's you will need. These are best explained with an example, so I'm going to show you how to determine whether it is raining (adding onto our previous example)</p>
-<pre><code>if (isRaining == True):
-    print("Get an umbrella!")
-else:
-    print("No umbrella needed")
+<p>Let's break this down. The first word def, is a keyword in Python. When Python sees this word it knows that we are about to define a function. The 'functionname' can be whatever we want it to be. For a function to print someone's name, we might call the funciton printname. The 'parameters' are the input for the function. We can pass in parameters into a function, and then the function can use those parameters and give us an output. The 'body' is the code that would do whatever we want the function to do. The return, is what we use to return the output. If we do not have anything to return, we can simply just put return. Let's try making that printname function.</p>
+<pre><code>def printname( str ):
+print(str)
+return
 </code></pre>
-<p>As you can see, in this piece of code, we're able to determine whether it is raining or not. Now what if we want to classify different <strong>levels</strong> of rain? For this, we'd use an integer.</p>
-<pre><code>weatherLevel = 0
+<p>Now, once we make a function, we need to call it. Calling a function basically means telling Python that we want to use it. Let's say I want to print out Tom's name using this function. </p>
+<pre><code>printname('Tom')
 </code></pre>
-<p>Now, we can rewrite the above method.</p>
-<pre><code>if (weatherLevel == 0):
-    print("Get an umbrella!")
-else:
-    print("No umbrella needed")
+<p>I would type out the funciton and pass in the parameter, which in this case is a string, 'Tom'. </p>
+<p>An important thing to remember is that parameters are passed in by reference. What that means is, is that the value of the actual parameters will change if we pass it into the function. Let's look at an example. Let's say we have a list of numbers. We want to create a function that will add more numbers to a list. </p>
+<pre><code>def addNum ( numList)
+numList.append([5, 6, 7, 8])
+print("Current vals", numList)
+return
 </code></pre>
-<p>As you see here, we are using a new operator: <strong>==</strong></p>
-<p>Unlike <strong>=</strong>, the <strong>==</strong> checks for <strong>equality</strong>, rather than assigning a value (which is what <strong>=</strong> does)</p>
-<p>There are 5 types of <strong>control operators</strong></p>
-<table>
-<thead>
-<tr>
-<th>Operator</th>
-<th>What it Means</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>==</strong></td>
-<td>Equals</td>
-</tr>
-<tr>
-<td><strong>!=</strong></td>
-<td>Not Equals</td>
-</tr>
-<tr>
-<td><strong>&gt;</strong></td>
-<td>Greater Than</td>
-</tr>
-<tr>
-<td><strong>&gt;=</strong></td>
-<td>Greater Than or Equal To</td>
-</tr>
-<tr>
-<td><strong>&lt;</strong></td>
-<td>Less Than</td>
-</tr>
-<tr>
-<td><strong>&lt;=</strong></td>
-<td>Less Than or Equal To</td>
-</tr>
-</tbody>
-</table>
-<p>We can also <strong>combine operators</strong>, using the following operators</p>
-<table>
-<thead>
-<tr>
-<th>Structure</th>
-<th>What it does</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>or</code></td>
-<td>Or</td>
-</tr>
-<tr>
-<td><code>and</code></td>
-<td>Or</td>
-</tr>
-</tbody>
-</table>
-<p>Lets use these in an example.</p>
-<pre><code>isRaining = True
-weatherLevel = 2
-
-if (isRaining):
-    if (weatherLevel == 1):
-        print("bring an umbrella")
-    elif (weatherLevel &gt;= 2):
-        print("don't go outside!")
-else:
-    print("perfect weather!")
+<p>Let's try calling the function.</p>
+<pre><code>numList = [1, 2, 3, 4]
+addNum(numList) 
+print("Current vals", numList)
 </code></pre>
-<h3 id="input-from-the-user">Input from the User</h3>
-<p>Up until now we have defined variables like strings inside the program itself to give the computer a starting point. However, now we will be able to ask the user for input without them having to enter it inside your code.</p>
-<p>The format for the input function is</p>
-<pre><code>input('prompt')
+<p>This is what will print out.</p>
+<pre><code>Current values [1, 2, 3, [5, 6, 7, 8]]
+Current values [1, 2, 3, [5, 6, 7, 8]]
 </code></pre>
-<p>We can ask for someone's name, then output a greeting, for example:</p>
-<pre><code>name = input('What is your name?\n')
-print('Nice to meet you, ', name)
+<p>If we wanted to make sure that that reference didn't change, then we would have to create another reference inside our function.</p>
+<pre><code>def addNum ( numList)
+numList = [5, 6, 7, 8]
+print("Current vals", numList)
+return
 </code></pre>
-<p>This returns</p>
-<pre><code>What is your name?
-&lt;input&gt;
-Nice to meet you, &lt;input&gt;
+<p>Let's try calling the function.</p>
+<pre><code>numList = [1, 2, 3, 4]
+addNum(numList) 
+print("Current vals", numList)
 </code></pre>
-<p>Note that "input" would be replaced with whatever you type in at the prompt.</p>
-<p>We can do the same with numbers, for example, in this program that asks for your age:</p>
-<pre><code>age = int(input('What is your age?\n'))
-</code></pre>
-<p>The <strong>int</strong> function converts the result from the user's input (a string) to an integer.</p>
-<p>Now we can use what we learned about control structures to print out custom messages.</p>
-<pre><code>if(age &lt; 0):
-    print("you are not born yet")
-elif(age &lt; 18):
-    print("you're not an adult yet")
-elif(age &lt; 26):
-    print("you're a young adult!")
-elif(age &lt; 65):
-    print("you're an adult")
-else:
-    print("wow you're old!")
+<p>This is what would print out.</p>
+<pre><code>Current values [1, 2, 3, 4]
+Current values [5, 6, 7, 8]
 </code></pre>
               
               
@@ -512,7 +388,7 @@ else:
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../lesson1/" title="Lesson 1" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../lesson5/" title="Lesson 5" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -521,19 +397,19 @@ else:
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Lesson 1
+                Lesson 5
               </span>
             </div>
           </a>
         
         
-          <a href="../lesson3/" title="Lesson 3" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../challenges/" title="Challenges" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Lesson 3
+                Challenges
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
