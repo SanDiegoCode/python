@@ -9,7 +9,7 @@
         <meta name="description" content="A tutorial to python">
       
       
-        <link rel="canonical" href="https://sandiegocode/python/lesson1/">
+        <link rel="canonical" href="https://sandiegocode/python/lesson7/">
       
       
         <meta name="author" content="San Diego Code">
@@ -21,7 +21,7 @@
     
     
       
-        <title>Lesson 1 - Python Tutorials</title>
+        <title>Lesson 7 - Python Tutorials</title>
       
     
     
@@ -86,7 +86,7 @@
             
               
             
-            Lesson 1
+            Lesson 7
           
         </span>
       </div>
@@ -203,57 +203,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Lesson 1
-      </label>
-    
-    <a href="./" title="Lesson 1" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../lesson1/" title="Lesson 1" class="md-nav__link">
       Lesson 1
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#welcome" title="Welcome!" class="md-nav__link">
-    Welcome!
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#variable-types" title="Variable Types" class="md-nav__link">
-    Variable Types
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#printing" title="Printing" class="md-nav__link">
-    Printing
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -321,11 +275,20 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../lesson7/" title="Lesson 7" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+    <a href="./" title="Lesson 7" class="md-nav__link md-nav__link--active">
       Lesson 7
     </a>
+    
   </li>
 
     
@@ -355,34 +318,8 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
   
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#welcome" title="Welcome!" class="md-nav__link">
-    Welcome!
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#variable-types" title="Variable Types" class="md-nav__link">
-    Variable Types
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#printing" title="Printing" class="md-nav__link">
-    Printing
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
   
 </nav>
                   </div>
@@ -394,101 +331,40 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/sandiegocode/python/edit/master/docs/lesson1.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                  <a href="https://github.com/sandiegocode/python/edit/master/docs/lesson7.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
                 
                 
-                  <h1>Lesson 1</h1>
-                
-                <h2 id="welcome">Welcome!</h2>
-<p>In our first lesson here we will be focusing on learning about <strong>variables</strong> and <strong>data types</strong>. 
-Let's jump right in. </p>
-<p>So what exactly is a variable? You can think of variables as a box where you can store a value. A <strong>value</strong> is information that is related a certain variable. </p>
-<pre><code>statement = "Hello"
+                <h1 id="codeskulptor-simplegui">Codeskulptor SImplegui</h1>
+<p>Up until now you have been using the console for all interactions with the computer, whether it be input or output. However, true applications don't use a console; they have a format laid out called a <em>Graphical User Interface</em> (GUI). This is much neater and nicer-looking than a console. </p>
+<p>Since this is a specialized library, you will need to use codeskulptor.org for this next lesson.</p>
+<p>First entering the web site, there is already a template for a simplegui frame with sample components laid out for you. Click <strong>run</strong> and see what comes up.</p>
+<p>You should see a button on the left, called the "control panel", and a sketch pad on the right, called the "canvas". Click on the button to see what it does! You will learn how this works and how to code components like it and much more.
+The simplegui window is called a <em>frame</em>. At the bottom of the page, you should see a simplegui object being instantiated, and set to a variable called "frame".</p>
+<pre><code>frame = simplegui.create_frame("Home", 300, 200)
 </code></pre>
-<p>Now, we have a variable called statement, with the message "Hello" stored inside. Making variables is pretty simple in Python. Let's print that statement now:</p>
-<pre><code>print(statement)
+<p>Let's break this down: create_frame() is a function of simplegui, just like you have been calling functions of strings and lists before. This function takes in three parameters: a string and two integers. The integers are the length and width of the canvas on the right side of the window. It will also change the size of the window to fit. This function returns a new simplegui frame for you to use; this line sets a variable called "frame" to this new frame. If you want to call a function of simplegui now, you would type frame.function().</p>
+<p>The next lines in this sample add <em>components</em> to your window. This line</p>
+<pre><code>frame.add_button("Click me", click)
 </code></pre>
-<p>When you run your program, "Hello" should have been printed out. 
-You can create whatever variables you want, but there are a couple rules that you need to follow when naming your variables:</p>
-<ol>
-<li>
-<p>Variable names cannot start with a number. Variable names can also only contain letters, numbers, and underscores. </p>
-</li>
-<li>
-<p>No spaces should be in your variable names.</p>
-</li>
-<li>
-<p>There are some words that Python has kept for programming functions or keywords, like for, not, try, as, if, and more. You cannot use those words when naming your variables.</p>
-</li>
-</ol>
-<p>Alright, now that we know the rules, let's learn about the different types of data. Programs deal with data a lot, so it's a good idea to understand the different types of data in Python.</p>
-<h2 id="variable-types">Variable Types</h2>
-<p><strong>Strings:</strong> A string is a series of characters. The way you declare, or create a string is just like how we made the variable, statement from earlier; by placing whatever message we want to have in "quotation marks". </p>
-<pre><code>"String"
+<p>adds a button, as you may guess (that says "Click me").</p>
+<p>Now, how do you tell the button what to do when it's clicked? This is what the second parameter does. For the second parameter, you need to pass in another function. Passing in functions as parameters for other functions is smething you will use a lot in programming.</p>
+<p>Higher up in the code, you will see a defined function called "click", which is what is passed into the add_button function. Whenever the button is clicked, it will call the function "click".</p>
+<p>Likewise, the next line </p>
+<pre><code>frame.set_draw_handler(draw)
 </code></pre>
-<p><strong>Integers:</strong> In Python, we can multiply, divide, add, and subtract integers with ease. </p>
-<pre><code>&gt;&gt;&gt;2*5 
-10
-&gt;&gt;&gt;2/1
-2
-&gt;&gt;&gt;2+5
-7
-&gt;&gt;&gt;2-1
-1
+<p>passes in a function called "draw" which tells the canvas what to draw.</p>
+<p>You can add many more components, each with their own function (these functions are called <em>handlers</em>). Each component initialization takes in a handler function as a parameter, although other parameters vary for each component.</p>
+<p>A list of some useful and/or fun components to add includes</p>
+<pre><code>label = frame.add_label(text)
 </code></pre>
-<p><strong>Floats:</strong> These are numbers with decimal points. We can peform similar operations(+, -, *, /) on floats like we could on integers, without too much trouble.</p>
-<pre><code>&gt;&gt;&gt;0.2 + 1.3
-1.5
+<p>where  <em>text</em> is a string. This doesn't have a handler, but you can set the label to something else by calling label.set_text(newtext).</p>
+<pre><code>textinput = frame.add_input(text, input_handler, width)
 </code></pre>
-<p>However, we may get a large number of decimal places in the answers to our calculations. Just try to ignore them for now, all Python is doing is trying to give us the most exact number.</p>
-<pre><code>&gt;&gt;&gt;0.2 + 0.1
-.3000000004
-</code></pre>
-<p>Alright, now we know about a couple of different data types in Python. Now let's see what we can do with that data. </p>
-<h2 id="printing">Printing</h2>
-<p>A <strong>method</strong>, is an action that the programming language you are using, whether it be Python or Java, can perform on a certain piece of data.</p>
-<p>For example, let's say that I made a string, and I wanted to change the case(A or a) of certain letters in that string. I could use a couple of different methods to make that happen.</p>
-<pre><code>myName = "ted martinez"
-print(myName.title())
-</code></pre>
-<p>The method I used is title(). When I use that method, this is what Python prints out.</p>
-<pre><code>Ted Martinez
-</code></pre>
-<p>That small dot in front of the word title, is what makes the title() method act on the variable, myName. Sometimes, certain methods will need more information to act, that is why there are parentheses following the word title. </p>
-<p>Here are some other methods you can use to change your strings.</p>
-<pre><code>print(myName.lower())
-print(myName.upper())
-</code></pre>
-<p>Here is what prints out:</p>
-<pre><code>ted martinez
-TED MARTINEZ
-</code></pre>
-<p>You can also combine strings together, using the + sign, as shown below.</p>
-<pre><code>first_name = "Ted"
-last_name = "Martinez"
-full_name = first_name + " " +  last_name
-print(full_name)
-</code></pre>
-<p>We added an extra " " so that there could be a space between the first name and the last name.
-Python should print this out:</p>
-<pre><code>"Ted Martinez"
-</code></pre>
-<p>If you ever want to add a tab to your text, you can add \t when printing out a string.</p>
-<pre><code>print("Hello")
-print("\tHello")
-</code></pre>
-<p>This should print out:</p>
-<pre><code>Hello
-    Hello
-</code></pre>
-<p>You can also have a string break into a new line by using \n.</p>
-<pre><code>print("Hello\nMy name is\nTed")
-</code></pre>
-<p>This should print out:</p>
-<pre><code>Hello
-My name is
-Ted
-</code></pre>
+<p>This is like the input() function that you've been using until now, but this includes a nice box to enter text into.
+textinput.get_text() returns what is currently typed into the box.</p>
+<p>There are many more functions like this included in the simplegui library. See them all on the <a href="http://www.codeskulptor.org/docs.html#tabs-Python">SimpleGUI documentation here</a>.</p>
+<h1 id="global-variables">Global Variables</h1>
+<p>How are these functions sharing the same variables with each other? They use global variables. In the sample program, the global varable is a string called messages. Because it's global, both the button handler and draw handler can use it. In this case, the button handler changes messages from "Welcome" to "Good job", and the draw handler prints whatever messages is currently set to. In order to use a global variable, you need to use the keyword <em>global</em>, as to not accidentally make a new variable by the same name.</p>
                 
                   
                 
@@ -507,7 +383,7 @@ Ted
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href=".." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../lesson6/" title="Lesson 6" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -516,19 +392,19 @@ Ted
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Home
+                Lesson 6
               </span>
             </div>
           </a>
         
         
-          <a href="../lesson2/" title="Lesson 2" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../challenges/" title="Challenges" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Lesson 2
+                Challenges
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
