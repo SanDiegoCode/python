@@ -1,42 +1,1 @@
-##Lesson 5: Dictionaries
-Dictionaries, are sort of like lists, which we learned about in lesson 2. However, there are a couple of key differences between the two. 
-
-1. Lists are ordered. Dictionaries are not. 
-2. Items in lists are accessed through indices (0, 1, 2..) and items in dictionaries are accessed through keys. 
-
-A dictionary can be defined as an associative array. What that means is, is that every key for a dictionary can be associated to a value. 
-
-Dictionaries can be of any type. Here is an example. Let's say we want to create a description for a student named Tom. In this description, we want to include Tom's name, age, and student ID number.
-
-	bio = { 'name' : 'Tom', 'age': '19', 'id' : '1234567'}
-	print bio['name']
-	
-This is what would print out.
-	
-	Tom
-We can do the same for his age, and his id number. With dictionaries we can access items through keys. Let's look 
-at the dictionary or dict we just created. 
-
-In bio, we have three items, Tom's name, his age, and his id number. For each item, we have a key; 'name', 'age', and 'id', that respectively associate with each value in the dictionary. Meaning, 'name' for 'Tom', 'age' for '19', and 'id' for '1234567'. 
-
-If we want to add more items into a list, we can do so as shown here. It's sort of similar to adding items to a list. Let's go back to our dictionary. This is what we have right now.
-
-	bio = { 'name' : 'Tom', 'age': '19', 'id' : '1234567'}
-Let's say we want to add Tom's college major to the list. We can do so as shown here:
-
-	bio['major'] = 'Math'
-The structure for the statement to add an item to a dictionary is as follows: **dictionaryname['key'] = 'value'**. Obviously, as dictionaries can be of any type, we can make the values any type we want. We can print out values of a dictionary using : dictionaryname['key'].
-
-If a value of an item in a dictionary is the same as a key in another dictionary, we can use that as a key. Meaning, let's say we have a dictionary for some U.S states. This is what the dict looks like:
-
-	state = {'California' : 'CA', 'Oregon' : 'OR', 'Washington' : 'WA'}
-Let's say we have another dictionary that has a bunch of capital cities of states.	
-
-	city = {'CA' : 'Sacremento', 'OR' : 'Salem', 'WA' : 'Olympia'}
-As you can see, the values of the 'state' dictionary are the same as the keys for the 'city' dictionary. Therefore, let's say we want to print out the capital city of a certain state, we can do so in two ways. 
-
-	print(city['CA'])
-	print(city[state['California']])
-Both of these will print out:
-
-	Sacremento
+# Introduction to Methods### What are methods?<b>Methods</b> are blocks of code that are grouped together that can take in an input and give something out.Confused? Let's look at some examples to clarify.Imagine a vending machine, in which we ```input``` money and we are ```returned``` with a soda. In code, this would like this:	def vendingMachine(money):	if (money == "1"):		return "pepsi"	else:		return "not enough money!"But what about in situations that don't require an input? For example, when pressing a button, we give no input -- we just press it.In code:		def pressButton():		return "You pressed a button"Methods can be extremely powerful, as it lets us group a lot of code that we might use often. In this next example, we've written a program that takes in input from the user, and tells whether it is raining or not.	def weatherStatus(city):	if (city == "San Diego"):		return "sunny"	else:		return "not as good as San Diego"	while True:		cityInput = input("What City would you like weather data for?")		status = weatherStatus(cityInput)		print ("The weather in " + cityInput + " is " + status)**Challenge**Make a function that randomly selects an item from a list. In this function, you define a *list* of strings (name of items, these could be whatever you want). This function takes in no input, but returns a random string from the list.##Lesson 5: DictionariesDictionaries, are sort of like lists, which we learned about in lesson 2. However, there are a couple of key differences between the two. 1. Lists are ordered. Dictionaries are not. 2. Items in lists are accessed through indices (0, 1, 2..) and items in dictionaries are accessed through keys. A dictionary can be defined as an associative array. What that means is, is that every key for a dictionary can be associated to a value. Dictionaries can be of any type. Here is an example. Let's say we want to create a description for a student named Tom. In this description, we want to include Tom's name, age, and student ID number.	bio = { 'name' : 'Tom', 'age': '19', 'id' : '1234567'}	print bio['name']	This is what would print out.		TomWe can do the same for his age, and his id number. With dictionaries we can access items through keys. Let's look at the dictionary or dict we just created. In bio, we have three items, Tom's name, his age, and his id number. For each item, we have a key; 'name', 'age', and 'id', that respectively associate with each value in the dictionary. Meaning, 'name' for 'Tom', 'age' for '19', and 'id' for '1234567'. If we want to add more items into a list, we can do so as shown here. It's sort of similar to adding items to a list. Let's go back to our dictionary. This is what we have right now.	bio = { 'name' : 'Tom', 'age': '19', 'id' : '1234567'}Let's say we want to add Tom's college major to the list. We can do so as shown here:	bio['major'] = 'Math'The structure for the statement to add an item to a dictionary is as follows: **dictionaryname['key'] = 'value'**. Obviously, as dictionaries can be of any type, we can make the values any type we want. We can print out values of a dictionary using : dictionaryname['key'].If a value of an item in a dictionary is the same as a key in another dictionary, we can use that as a key. Meaning, let's say we have a dictionary for some U.S states. This is what the dict looks like:	state = {'California' : 'CA', 'Oregon' : 'OR', 'Washington' : 'WA'}Let's say we have another dictionary that has a bunch of capital cities of states.		city = {'CA' : 'Sacremento', 'OR' : 'Salem', 'WA' : 'Olympia'}As you can see, the values of the 'state' dictionary are the same as the keys for the 'city' dictionary. Therefore, let's say we want to print out the capital city of a certain state, we can do so in two ways. 	print(city['CA'])	print(city[state['California']])Both of these will print out:	Sacremento
