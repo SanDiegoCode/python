@@ -10,7 +10,7 @@
         <meta name="description" content="A tutorial to python">
       
       
-        <link rel="canonical" href="https://sandiegocode/python/challenges/">
+        <link rel="canonical" href="https://sandiegocode/python/lesson7/">
       
       
         <meta name="author" content="San Diego Code">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Challenges - Python Tutorials</title>
+        <title>Lesson 7 - Python Tutorials</title>
       
     
     
@@ -87,7 +87,7 @@
             
               
             
-            Challenges
+            Lesson 7
           
         </span>
       </div>
@@ -276,18 +276,6 @@
       
       
 
-
-  <li class="md-nav__item">
-    <a href="../lesson7/" title="Lesson 7" class="md-nav__link">
-      Lesson 7
-    </a>
-  </li>
-
-    
-      
-      
-      
-
   
 
 
@@ -298,57 +286,22 @@
       
     
     
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Challenges
-      </label>
-    
-    <a href="./" title="Challenges" class="md-nav__link md-nav__link--active">
-      Challenges
+    <a href="./" title="Lesson 7" class="md-nav__link md-nav__link--active">
+      Lesson 7
     </a>
     
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
+  </li>
+
     
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#the-number-guessing-game" title="The Number Guessing Game" class="md-nav__link">
-    The Number Guessing Game
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#running-the-program" title="Running the program:" class="md-nav__link">
-    Running the program:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#try-it-out" title="Try It Out!" class="md-nav__link">
-    Try It Out!
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
       
       
-    </ul>
-  
-</nav>
-    
+
+
+  <li class="md-nav__item">
+    <a href="../challenges/" title="Challenges" class="md-nav__link">
+      Challenges
+    </a>
   </li>
 
     
@@ -369,40 +322,6 @@
     
   
   
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#the-number-guessing-game" title="The Number Guessing Game" class="md-nav__link">
-    The Number Guessing Game
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#running-the-program" title="Running the program:" class="md-nav__link">
-    Running the program:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#try-it-out" title="Try It Out!" class="md-nav__link">
-    Try It Out!
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -413,53 +332,59 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/sandiegocode/python/edit/master/docs/challenges.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                  <a href="https://github.com/sandiegocode/python/edit/master/docs/lesson7.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
                 
                 
-                <h1 id="challenges">Challenges</h1>
-<h2 id="the-number-guessing-game">The Number Guessing Game</h2>
-<p>For this activity, you will be making a number guessing game! The premise is that you will generate a random number in a certain range (1-1000 works best), and the user needs to guess the number. </p>
-<h3 id="running-the-program">Running the program:</h3>
-<p>The python script starts up, generating a random number. It <strong>prompts</strong> the user for a guess. There is a 99.9% chance that this guess will be wrong. If the guess is lower than the number generated,</p>
-<pre><code>too low
+                <h1 id="codeskulptor-simplegui">Codeskulptor SImplegui</h1>
+<p>Up until now you have been using the console for all interactions with the computer, whether it be input or output. However, true applications don't use a console; they have a format laid out called a <em>Graphical User Interface</em> (GUI). This is much neater and nicer-looking than a console. </p>
+<p>Since this is a specialized library, you will need to use codeskulptor.org for this next lesson.</p>
+<p>First entering the web site, there is already a template for a simplegui frame with sample components laid out for you. Click <strong>run</strong> and see what comes up.</p>
+<p>You should see a button on the left, called the "control panel", and a sketch pad on the right, called the "canvas". Click on the button to see what it does! You will learn how this works and how to code components like it and much more.
+The simplegui window is called a <em>frame</em>. At the bottom of the page, you should see a simplegui object being instantiated, and set to a variable called "frame".</p>
+<pre><code>frame = simplegui.create_frame("Home", 300, 200)
 </code></pre>
-<p>will print. If the guess is higher than the number generated, </p>
-<pre><code>too high
+<p>Let's break this down: create_frame() is a function of simplegui, just like you have been calling functions of strings and lists before. This function takes in three parameters: a string and two integers. The integers are the length and width of the canvas on the right side of the window. It will also change the size of the window to fit. This function returns a new simplegui frame for you to use; this line sets a variable called "frame" to this new frame. If you want to call a function of simplegui now, you would type frame.function().</p>
+<p>The next lines in this sample add <em>components</em> to your window. This line</p>
+<pre><code>frame.add_button("Click me", click)
 </code></pre>
-<p>will print.</p>
-<p>After this, the user is again prompted for a guess. This <strong>repeats</strong> until the user guesses the correct number.</p>
-<h3 id="try-it-out">Try It Out!</h3>
-<p>Try to write the script above using everything you've learned so far. It includes conditional statements and loops.</p>
-<p>In order to do this, you need to import a library called random, which allows you to generate a random number in a certain range. At the top of your script, write</p>
-<pre><code>import random
+<p>adds a button, as you may guess (that says "Click me").</p>
+<p>Now, how do you tell the button what to do when it's clicked? This is what the second parameter does. For the second parameter, you need to pass in another function. Passing in functions as parameters for other functions is smething you will use a lot in programming.</p>
+<p>Higher up in the code, you will see a defined function called "click", which is what is passed into the add_button function. Whenever the button is clicked, it will call the function "click".</p>
+<p>Likewise, the next line </p>
+<pre><code>frame.set_draw_handler(draw)
 </code></pre>
-<p>This library has a function called "randint", taking in two parameters: the low bound, and the high bound. For example, if you want a number between 42 and 420, you would write</p>
-<pre><code>randomNumber = random.randint(42, 420)
+<p>passes in a function called "draw" which tells the canvas what to draw.</p>
+<p>You can add many more components, each with their own function (these functions are called <em>handlers</em>). Each component initialization takes in a handler function as a parameter, although other parameters vary for each component.</p>
+<p>A list of some useful and/or fun components to add includes</p>
+<pre><code>label = frame.add_label(text)
 </code></pre>
-<p>This sets "randomNumber" to a random integer between 42 and 420.</p>
-<p>Now you have everything you need to write this script! First, try to write it by yourself, using everything you've learned so far. If you're having trouble, refer to the <strong>pseudocode</strong> below. </p>
-<p><button class="btn red" type="button" href="#link" id="link" onclick="toggleSolution()"><span>View Solution</span></button></p>
-<div id="solution" style="display: none;">
-<pre><code>
-import random
-import math
+<p>where  <em>text</em> is a string. This doesn't have a handler, but you can set the label to something else by calling label.set_text(newtext).</p>
+<pre><code>textinput = frame.add_input(text, input_handler, width)
+</code></pre>
+<p>This is like the input() function that you've been using until now, but this includes a nice box to enter text into.
+textinput.get_text() returns what is currently typed into the box.</p>
+<p>There are many more functions like this included in the simplegui library. See them all on the <a href="http://www.codeskulptor.org/docs.html#tabs-Python">SimpleGUI documentation here</a>.</p>
+<h1 id="global-variables">Global Variables</h1>
+<p>How are these functions sharing the same variables with each other? They use global variables. In the sample program, the global varable is a string called messages. Because it's global, both the button handler and draw handler can use it. In this case, the button handler changes messages from "Welcome" to "Good job", and the draw handler prints whatever messages is currently set to. In order to use a global variable, you need to use the keyword <em>global</em>, as to not accidentally make a new variable by the same name.</p>
+<p>Here is an example of the <em>global</em> keyword in use:</p>
+<pre><code>number = 13
 
-rand = random.randint(1,1000)
-highorlow = ''
-guess = int(input('Guess a number between 1 and 1000\n'))
-
-while(guess != rand):
-    if(guess < rand):
-        highorlow = 'too low'
-    else:
-        highorlow = 'too high'
-    guess = int(input(highorlow + ', Guess again!\n'))
-print('You got it!')
+def addtonum(addto):
+    global number
+    number = number + addto
 </code></pre>
-</div>
+<p>and a second example:</p>
+<pre><code>number = 13
 
-<script>
-</script>
+def addtonum(addto):
+    number = number + addto
+</code></pre>
+<p>when you call</p>
+<pre><code>addtonum(12)
+print(number)
+</code></pre>
+<p>what will happen in each situation? </p>
+<p>Hint: the <em>global</em> keyword makes the difference between printing 25, and getting an error.</p>
                 
                   
                 
@@ -478,7 +403,7 @@ print('You got it!')
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../lesson7/" title="Lesson 7" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../lesson6/" title="Lesson 6" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -487,11 +412,25 @@ print('You got it!')
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Lesson 7
+                Lesson 6
               </span>
             </div>
           </a>
         
+        
+          <a href="../challenges/" title="Challenges" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Challenges
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
         
       </nav>
     </div>
