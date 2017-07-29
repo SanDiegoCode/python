@@ -259,6 +259,8 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
+      
+    
     
       <label class="md-nav__link md-nav__link--active" for="toc">
         Lesson 5
@@ -272,9 +274,18 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-methods" title="What are methods?" class="md-nav__link">
+    What are methods?
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#lesson-5-dictionaries" title="Lesson 5: Dictionaries" class="md-nav__link">
@@ -322,6 +333,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../lesson8/" title="Lesson 8" class="md-nav__link">
+      Lesson 8
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
     <a href="../challenges/" title="Challenges" class="md-nav__link">
       Challenges
     </a>
@@ -342,9 +365,18 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-methods" title="What are methods?" class="md-nav__link">
+    What are methods?
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#lesson-5-dictionaries" title="Lesson 5: Dictionaries" class="md-nav__link">
@@ -370,9 +402,39 @@
                   <a href="https://github.com/sandiegocode/python/edit/master/docs/lesson5.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
                 
                 
-                  <h1>Lesson 5</h1>
-                
-                <h2 id="lesson-5-dictionaries">Lesson 5: Dictionaries</h2>
+                <h1 id="introduction-to-methods">Introduction to Methods</h1>
+<h3 id="what-are-methods">What are methods?</h3>
+<p><b>Methods</b> are blocks of code that are grouped together that can take in an input and give something out.</p>
+<p>Confused? Let's look at some examples to clarify.</p>
+<p>Imagine a vending machine, in which we <code>input</code> money and we are <code>returned</code> with a soda. </p>
+<p>In code, this would like this:</p>
+<pre><code>def vendingMachine(money):
+if (money == "1"):
+    return "pepsi"
+else:
+    return "not enough money!"
+</code></pre>
+<p>But what about in situations that don't require an input? For example, when pressing a button, we give no input -- we just press it.</p>
+<p>In code:</p>
+<pre><code>def pressButton():
+    return "You pressed a button"
+</code></pre>
+<p>Methods can be extremely powerful, as it lets us group a lot of code that we might use often. </p>
+<p>In this next example, we've written a program that takes in input from the user, and tells whether it is raining or not.</p>
+<pre><code>def weatherStatus(city):
+if (city == "San Diego"):
+    return "sunny"
+else:
+    return "not as good as San Diego"
+
+while True:
+    cityInput = input("What City would you like weather data for?")
+    status = weatherStatus(cityInput)
+    print ("The weather in " + cityInput + " is " + status)
+</code></pre>
+<p><strong>Challenge</strong></p>
+<p>Make a function that randomly selects an item from a list. In this function, you define a <em>list</em> of strings (name of items, these could be whatever you want). This function takes in no input, but returns a random string from the list.</p>
+<h2 id="lesson-5-dictionaries">Lesson 5: Dictionaries</h2>
 <p>Dictionaries, are sort of like lists, which we learned about in lesson 2. However, there are a couple of key differences between the two. </p>
 <ol>
 <li>Lists are ordered. Dictionaries are not. </li>

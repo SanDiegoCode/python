@@ -2,10 +2,10 @@ var on = false;
 
 function toggleSolution() {
     if (on) {
-        document.getElementById("solution").style.display = 'none';
+        document.getElementById("__code_4").style.display = 'none';
 
     } else {
-        document.getElementById("solution").style.display = '';
+        document.getElementById("__code_4").style.display = '';
 
 
     }

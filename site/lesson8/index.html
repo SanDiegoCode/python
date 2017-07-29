@@ -10,7 +10,7 @@
         <meta name="description" content="A tutorial to python">
       
       
-        <link rel="canonical" href="https://sandiegocode/python/lesson1/">
+        <link rel="canonical" href="https://sandiegocode/python/lesson8/">
       
       
         <meta name="author" content="San Diego Code">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Lesson 1 - Python Tutorials</title>
+        <title>Lesson 8 - Python Tutorials</title>
       
     
     
@@ -87,7 +87,7 @@
             
               
             
-            Lesson 1
+            Lesson 8
           
         </span>
       </div>
@@ -204,57 +204,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Lesson 1
-      </label>
-    
-    <a href="./" title="Lesson 1" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../lesson1/" title="Lesson 1" class="md-nav__link">
       Lesson 1
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#welcome" title="Welcome!" class="md-nav__link">
-    Welcome!
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#variable-types" title="Variable Types" class="md-nav__link">
-    Variable Types
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#printing" title="Printing" class="md-nav__link">
-    Printing
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -334,11 +288,47 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../lesson8/" title="Lesson 8" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Lesson 8
+      </label>
+    
+    <a href="./" title="Lesson 8" class="md-nav__link md-nav__link--active">
       Lesson 8
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#splice-notation" title="Splice Notation" class="md-nav__link">
+    Splice Notation
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -368,27 +358,15 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#welcome" title="Welcome!" class="md-nav__link">
-    Welcome!
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#variable-types" title="Variable Types" class="md-nav__link">
-    Variable Types
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#printing" title="Printing" class="md-nav__link">
-    Printing
+  <a href="#splice-notation" title="Splice Notation" class="md-nav__link">
+    Splice Notation
   </a>
   
 </li>
@@ -407,100 +385,120 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/sandiegocode/python/edit/master/docs/lesson1.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                  <a href="https://github.com/sandiegocode/python/edit/master/docs/lesson8.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
                 
                 
-                  <h1>Lesson 1</h1>
-                
-                <h2 id="welcome">Welcome!</h2>
-<p>In our first lesson here we will be focusing on learning about <strong>variables</strong> and <strong>data types</strong>. 
-Let's jump right in. </p>
-<p>So what exactly is a variable? You can think of variables as a box where you can store a value. A <strong>value</strong> is information that is related a certain variable. </p>
-<pre><code>statement = "Hello"
+                <h1 id="string-formatting">String Formatting</h1>
+<p>The art of printing in python is made much easier with its numerous string functions, which go beyond manipulating the string by calling a function like</p>
+<pre><code>string.function()
 </code></pre>
-<p>Now, we have a variable called statement, with the message "Hello" stored inside. Making variables is pretty simple in Python. Let's print that statement now:</p>
-<pre><code>print(statement)
+<p>In reality, you are able to use these functions with any iterable data structure in python, such as lists. However we will be using them on strings to start off.</p>
+<h2 id="splice-notation">Splice Notation</h2>
+<p>When you only want certain items in a list, or as we will see here, certain characters in a string, splice notation will come in handy. Here is the format for spice notation:</p>
+<pre><code>someString = "San Diego Coding"
+someString = someString[begindex:endindex:step]
 </code></pre>
-<p>When you run your program, "Hello" should have been printed out. 
-You can create whatever variables you want, but there are a couple rules that you need to follow when naming your variables:</p>
-<ol>
-<li>
-<p>Variable names cannot start with a number. Variable names can also only contain letters, numbers, and underscores. </p>
-</li>
-<li>
-<p>No spaces should be in your variable names.</p>
-</li>
-<li>
-<p>There are some words that Python has kept for programming functions or keywords, like for, not, try, as, if, and more. You cannot use those words when naming your variables.</p>
-</li>
-</ol>
-<p>Alright, now that we know the rules, let's learn about the different types of data. Programs deal with data a lot, so it's a good idea to understand the different types of data in Python.</p>
-<h2 id="variable-types">Variable Types</h2>
-<p><strong>Strings:</strong> A string is a series of characters. The way you declare, or create a string is just like how we made the variable, statement from earlier; by placing whatever message we want to have in "quotation marks". </p>
-<pre><code>"String"
+<p>The indices inside the brackets should be replaced with integers. What that second line does is it takes <em>someString</em> and "splices" it, based on the indices in the brackets. <em>begindex</em> is the index of the first character you want to have in your new string. <em>endindex</em> is the index of the character <strong>after</strong> the last character in your spliced string. <em>step</em> is the pattern specifier. Keep in mind that you do not have to specify each index.</p>
+<p>For example:</p>
+<pre><code>print(someString[4:])
 </code></pre>
-<p><strong>Integers:</strong> In Python, we can multiply, divide, add, and subtract integers with ease. </p>
-<pre><code>&gt;&gt;&gt;2*5 
-10
-&gt;&gt;&gt;2/1
-2
-&gt;&gt;&gt;2+5
-7
-&gt;&gt;&gt;2-1
-1
+<p>will return</p>
+<pre><code>&gt;&gt; Diego Coding
 </code></pre>
-<p><strong>Floats:</strong> These are numbers with decimal points. We can peform similar operations(+, -, *, /) on floats like we could on integers, without too much trouble.</p>
-<pre><code>&gt;&gt;&gt;0.2 + 1.3
-1.5
+<p>Likewise, you can specify the end of your spliced string:</p>
+<pre><code>print(someString[:12])
+
+&gt;&gt; San Diego Co
 </code></pre>
-<p>However, we may get a large number of decimal places in the answers to our calculations. Just try to ignore them for now, all Python is doing is trying to give us the most exact number.</p>
-<pre><code>&gt;&gt;&gt;0.2 + 0.1
-.3000000004
+<p>Putting them together, we get</p>
+<pre><code>print(someString[4:12])
+
+&gt;&gt; Diego Co
 </code></pre>
-<p>Alright, now we know about a couple of different data types in Python. Now let's see what we can do with that data. </p>
-<h2 id="printing">Printing</h2>
-<p>A <strong>method</strong>, is an action that the programming language you are using, whether it be Python or Java, can perform on a certain piece of data.</p>
-<p>For example, let's say that I made a string, and I wanted to change the case(A or a) of certain letters in that string. I could use a couple of different methods to make that happen.</p>
-<pre><code>myName = "ted martinez"
-print(myName.title())
+<p>which goes from the 4th index to the index <strong>before</strong> the 12th. Now we're going to do something weird:</p>
+<pre><code>print(someString[:-3])
 </code></pre>
-<p>The method I used is title(). When I use that method, this is what Python prints out.</p>
-<pre><code>Ted Martinez
+<p>What happens when you put a negative number as an index? The negative number indices actually act like positive indices, but coming from the end of the string as opposed to the front. The character someString[-3] is an "i", which is the third character <em>from the back</em>! So, the code above should print:</p>
+<pre><code>&gt;&gt; San Diego Cod
 </code></pre>
-<p>That small dot in front of the word title, is what makes the title() method act on the variable, myName. Sometimes, certain methods will need more information to act, that is why there are parentheses following the word title. </p>
-<p>Here are some other methods you can use to change your strings.</p>
-<pre><code>print(myName.lower())
-print(myName.upper())
+<p>Using what you learned, figure out what this will give you:</p>
+<pre><code>print(someString[-12:12])
 </code></pre>
-<p>Here is what prints out:</p>
-<pre><code>ted martinez
-TED MARTINEZ
+<p>Here is a neat table for reference:</p>
+<table>
+<thead>
+<tr>
+<th>someString</th>
+<th>S</th>
+<th>a</th>
+<th>n</th>
+<th></th>
+<th>D</th>
+<th>i</th>
+<th>e</th>
+<th>g</th>
+<th>o</th>
+<th></th>
+<th>C</th>
+<th>o</th>
+<th>d</th>
+<th>i</th>
+<th>n</th>
+<th>g</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>positive index</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td>14</td>
+<td>15</td>
+</tr>
+<tr>
+<td>negative index</td>
+<td>-16</td>
+<td>-15</td>
+<td>-14</td>
+<td>-13</td>
+<td>-12</td>
+<td>-11</td>
+<td>-10</td>
+<td>-9</td>
+<td>-8</td>
+<td>-7</td>
+<td>-6</td>
+<td>-5</td>
+<td>-4</td>
+<td>-3</td>
+<td>-2</td>
+<td>-1</td>
+</tr>
+</tbody>
+</table>
+<p>Now, there is also a third index specification in the string splice notation: <em>step</em>, which specifies the pattern at which you add to your new string. To give an example:</p>
+<pre><code>print(someString[::2])
 </code></pre>
-<p>You can also combine strings together, using the + sign, as shown below.</p>
-<pre><code>first_name = "Ted"
-last_name = "Martinez"
-full_name = first_name + " " +  last_name
-print(full_name)
+<p>returns a new string with <strong>every other</strong> character. The first two sections are blank, as we are working with the entire string. It returns</p>
+<pre><code>&gt;&gt; SnDeoCdn
 </code></pre>
-<p>We added an extra " " so that there could be a space between the first name and the last name.
-Python should print this out:</p>
-<pre><code>"Ted Martinez"
+<p>The new string includes only every second character in <em>someString</em>. Putting a 3 in <em>step</em> will give you every third character and so on. Now, what happens when you specify <em>step</em> as a negative number?</p>
+<pre><code>print(someString[::-1])
 </code></pre>
-<p>If you ever want to add a tab to your text, you can add \t when printing out a string.</p>
-<pre><code>print("Hello")
-print("\tHello")
-</code></pre>
-<p>This should print out:</p>
-<pre><code>Hello
-    Hello
-</code></pre>
-<p>You can also have a string break into a new line by using \n.</p>
-<pre><code>print("Hello\nMy name is\nTed")
-</code></pre>
-<p>This should print out:</p>
-<pre><code>Hello
-My name is
-Ted
+<p>gives you every character in <em>someString</em> but in <strong>reverse order</strong>.</p>
+<pre><code>&gt;&gt; gnidoC ogeiD naS
 </code></pre>
                 
                   
@@ -520,7 +518,7 @@ Ted
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href=".." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../lesson7/" title="Lesson 7" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -529,19 +527,19 @@ Ted
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Home
+                Lesson 7
               </span>
             </div>
           </a>
         
         
-          <a href="../lesson2/" title="Lesson 2" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../challenges/" title="Challenges" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Lesson 2
+                Challenges
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
