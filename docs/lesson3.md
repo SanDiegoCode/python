@@ -1,4 +1,4 @@
-##Lesson 2 - Lists
+##Lesson 3 - Lists
 Now that we know a bit about variables and data types, we can now learn how we can put a bunch of data into one place and how to easily access it, through lists. 
 
 So what exactly is a **list**? A **list** is a group of items that are sorted in a certain order. A list usually contains more than one item, but those items can be whatever you want them to be. You can make a list of places you have visited or a list of numbers from 1-100, whatever you would like. 

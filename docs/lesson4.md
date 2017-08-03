@@ -1,4 +1,4 @@
-##Lesson 3 - Loops
+##Lesson 4 - Loops
 In the last lesson, we learned about **lists**, groups of items that are sorted in a certain order. In this lesson, we are going to learn about how we can easily go through the items in a list, using loops. 
 
 **Loops:**
