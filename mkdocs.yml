@@ -40,7 +40,7 @@ extra:
     next: 'Next'
   author:
     github: 'sandiegocode'
-
+  disqus: 'sandiegocode'
 
 # Extensions
 markdown_extensions:
