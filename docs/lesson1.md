@@ -1,4 +1,4 @@
-##Welcome! 
+##Welcome! bois
 
 In our first lesson here we will be focusing on learning about **variables** and **data types**. 
 Let's jump right in. 
